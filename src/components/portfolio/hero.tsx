@@ -5,11 +5,11 @@ import { ArrowDown } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden bg-black text-white px-6 md:px-12 lg:px-24 pt-32 pb-16">
+    <section className="relative w-full min-h-screen flex flex-col justify-between overflow-hidden bg-black text-white px-8 md:px-16 lg:px-[10%] xl:px-[15%] pt-32 pb-16">
       
       {/* Container for the huge typography - Left aligned */}
       <div className="flex flex-col justify-center w-full flex-1 mt-10">
-        <h1 className="flex flex-col font-black tracking-tighter uppercase leading-[0.82] text-[16vw] sm:text-[15vw] md:text-[13vw] lg:text-[11.5vw] text-left">
+        <h1 className="flex flex-col font-black tracking-tighter uppercase leading-[0.82] text-[16vw] sm:text-[15vw] md:text-[13vw] lg:text-[10vw] text-left">
           <motion.span
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
