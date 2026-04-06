@@ -5,14 +5,14 @@ import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
 
 const galleryImages = [
-  { id: 1, title: "대성당 내부", aspect: "portrait" },
-  { id: 2, title: "네온 골목", aspect: "landscape" },
-  { id: 3, title: "숲속 오솔길", aspect: "landscape" },
-  { id: 4, title: "석양의 전경", aspect: "portrait" },
-  { id: 5, title: "지하 연구소", aspect: "landscape" },
-  { id: 6, title: "산 정상", aspect: "portrait" },
-  { id: 7, title: "도시 옥상", aspect: "landscape" },
-  { id: 8, title: "고대 유적", aspect: "landscape" },
+  { id: 1, title: "대성당 내부", aspect: "portrait", src: "" },
+  { id: 2, title: "호숫가 공원", aspect: "landscape", src: "/images/gallery_1.jpg" },
+  { id: 3, title: "도심 전경", aspect: "landscape", src: "/images/gallery_2.jpg" },
+  { id: 4, title: "석양의 전경", aspect: "portrait", src: "" },
+  { id: 5, title: "지하 연구소", aspect: "landscape", src: "" },
+  { id: 6, title: "산 정상", aspect: "portrait", src: "" },
+  { id: 7, title: "도시 옥상", aspect: "landscape", src: "" },
+  { id: 8, title: "고대 유적", aspect: "landscape", src: "" },
 ]
 
 export function Gallery() {
@@ -62,11 +62,15 @@ export function Gallery() {
               }`}
             >
               <div 
-                className={`w-full bg-gradient-to-br from-secondary to-muted flex items-center justify-center ${
+                className={`w-full bg-gradient-to-br from-secondary to-muted flex items-center justify-center relative ${
                   image.aspect === "portrait" ? "aspect-[3/4]" : "aspect-video"
                 }`}
               >
-                <span className="text-muted-foreground/50 text-sm">{image.title}</span>
+                {image.src ? (
+                  <img src={image.src} alt={image.title} className="absolute inset-0 w-full h-full object-cover" />
+                ) : (
+                  <span className="text-muted-foreground/50 text-sm relative z-10">{image.title}</span>
+                )}
               </div>
               
               {/* Hover overlay */}
@@ -105,9 +109,17 @@ export function Gallery() {
               className="relative max-w-4xl w-full aspect-video bg-gradient-to-br from-secondary to-muted rounded-2xl flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
-              <span className="text-muted-foreground">
-                {galleryImages.find(img => img.id === selectedImage)?.title}
-              </span>
+              {galleryImages.find((img) => img.id === selectedImage)?.src ? (
+                <img 
+                  src={galleryImages.find(img => img.id === selectedImage)?.src} 
+                  alt="Gallery full view" 
+                  className="absolute inset-0 w-full h-full object-cover rounded-2xl" 
+                />
+              ) : (
+                <span className="text-muted-foreground">
+                  {galleryImages.find(img => img.id === selectedImage)?.title}
+                </span>
+              )}
             </motion.div>
 
             <button
