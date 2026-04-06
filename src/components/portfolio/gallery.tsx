@@ -106,19 +106,21 @@ export function Gallery() {
               animate={{ scale: 1, opacity: 1 }}
               exit={{ scale: 0.8, opacity: 0 }}
               transition={{ type: "spring", damping: 25, stiffness: 300 }}
-              className="relative max-w-4xl w-full aspect-video bg-gradient-to-br from-secondary to-muted rounded-2xl flex items-center justify-center"
+              className="relative max-w-[90vw] max-h-[90vh] flex items-center justify-center"
               onClick={(e) => e.stopPropagation()}
             >
               {galleryImages.find((img) => img.id === selectedImage)?.src ? (
                 <img 
                   src={galleryImages.find(img => img.id === selectedImage)?.src} 
                   alt="Gallery full view" 
-                  className="absolute inset-0 w-full h-full object-cover rounded-2xl" 
+                  className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl" 
                 />
               ) : (
-                <span className="text-muted-foreground">
-                  {galleryImages.find(img => img.id === selectedImage)?.title}
-                </span>
+                <div className="w-[800px] aspect-video bg-gradient-to-br from-secondary to-muted rounded-2xl flex items-center justify-center">
+                  <span className="text-muted-foreground">
+                    {galleryImages.find(img => img.id === selectedImage)?.title}
+                  </span>
+                </div>
               )}
             </motion.div>
 

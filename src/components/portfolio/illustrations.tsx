@@ -1,6 +1,8 @@
 "use client"
 
-import { motion } from "framer-motion"
+import { useState } from "react"
+import { motion, AnimatePresence } from "framer-motion"
+import { X } from "lucide-react"
 
 const illustrations = [
   { id: 1, title: "오피스 라이프", image: "/images/illust_1.jpg" },
@@ -9,6 +11,8 @@ const illustrations = [
 ]
 
 export function Illustrations() {
+  const [selectedImage, setSelectedImage] = useState<number | null>(null)
+
   return (
     <section className="relative w-full py-32 flex flex-col items-center">
       <div className="w-full max-w-7xl px-4 md:px-6">
@@ -36,6 +40,7 @@ export function Illustrations() {
               viewport={{ once: true }}
               transition={{ duration: 0.8, delay: index * 0.1, ease: [0.16, 1, 0.3, 1] }}
               className="group cursor-pointer flex flex-col gap-4"
+              onClick={() => setSelectedImage(item.id)}
             >
               <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-white/[0.03] border border-white/10 hover:border-[#A78BFA]/50 hover:shadow-[0_0_20px_rgba(167,139,250,0.15)] transition-all duration-300">
                 {/* Scale target */}
@@ -56,6 +61,42 @@ export function Illustrations() {
           ))}
         </div>
       </div>
+
+      {/* Lightbox */}
+      <AnimatePresence>
+        {selectedImage !== null && (
+          <motion.div
+            initial={{ opacity: 0 }}
+            animate={{ opacity: 1 }}
+            exit={{ opacity: 0 }}
+            className="fixed inset-0 z-50 bg-background/95 backdrop-blur-xl flex items-center justify-center p-6"
+            onClick={() => setSelectedImage(null)}
+          >
+            <motion.div
+              initial={{ scale: 0.8, opacity: 0 }}
+              animate={{ scale: 1, opacity: 1 }}
+              exit={{ scale: 0.8, opacity: 0 }}
+              transition={{ type: "spring", damping: 25, stiffness: 300 }}
+              className="relative max-w-[90vw] max-h-[90vh] flex items-center justify-center"
+              onClick={(e) => e.stopPropagation()}
+            >
+              <img 
+                src={illustrations.find(img => img.id === selectedImage)?.image} 
+                alt="Illustration full view" 
+                className="max-w-[90vw] max-h-[90vh] object-contain rounded-lg shadow-2xl" 
+              />
+            </motion.div>
+
+            <button
+              onClick={() => setSelectedImage(null)}
+              className="absolute top-6 right-6 p-2 text-foreground hover:text-primary transition-colors"
+              aria-label="Close lightbox"
+            >
+              <X className="w-8 h-8" />
+            </button>
+          </motion.div>
+        )}
+      </AnimatePresence>
     </section>
   )
 }
