@@ -20,8 +20,8 @@ export default function Home() {
       <FeaturedProjects />
       <ProjectsGrid />
       <About />
-      <Illustrations />
       <Timeline />
+      <Illustrations />
       <Gallery />
       <Contact />
       <Footer />
