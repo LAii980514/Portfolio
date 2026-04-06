@@ -33,15 +33,21 @@ export function Navigation() {
             : "py-6 bg-transparent"
           }`}
       >
-        <nav className="w-full max-w-7xl px-4 md:px-6 flex items-center justify-end">
+        <nav className="w-full max-w-7xl px-4 md:px-6 flex items-center justify-between">
+          
+          {/* Logo (V0 Brutalist Style) */}
+          <div className="font-black text-2xl tracking-tighter text-white">
+            LEVEL.D©
+          </div>
+
           {/* Desktop Navigation */}
-          <ul className="hidden md:flex items-center gap-12">
+          <ul className="hidden md:flex items-center gap-10">
             {navItems.map((item) => (
               <li key={item.name}>
                 <motion.a
                   href={item.href}
-                  className="text-sm text-muted-foreground hover:text-foreground transition-colors duration-300"
-                  whileHover={{ y: -2 }}
+                  className="text-sm tracking-widest uppercase font-semibold text-neutral-400 hover:text-white transition-colors duration-300"
+                  whileHover={{ opacity: 0.7 }}
                   transition={{ duration: 0.2 }}
                 >
                   {item.name}

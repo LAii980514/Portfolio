@@ -64,11 +64,11 @@ export function Hero() {
             transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
             className="max-w-md sm:text-left text-left sm:max-w-xs md:max-w-sm lg:max-w-md"
           >
-            <p className="text-lg md:text-xl font-normal bg-gradient-to-r from-blue-200 via-indigo-200 to-purple-200 bg-clip-text text-transparent leading-relaxed">
+            <p className="text-lg md:text-xl font-normal text-neutral-400 leading-relaxed">
               시선을 이끄는 감각으로,<br />
               플레이 경험을 설계합니다.
             </p>
-            <p className="mt-4 text-purple-300/80 font-medium tracking-wide">
+            <p className="mt-4 text-neutral-500 font-medium tracking-wider uppercase">
               레벨디자이너 김용언
             </p>
           </motion.div>
