@@ -3,9 +3,9 @@
 import { motion } from "framer-motion"
 
 const illustrations = [
-  { id: 1, title: "작품 제목 1" },
-  { id: 2, title: "작품 제목 2" },
-  { id: 3, title: "작품 제목 3" },
+  { id: 1, title: "오피스 라이프", image: "/images/illust_1.jpg" },
+  { id: 2, title: "나른한 오후", image: "/images/illust_2.jpg" },
+  { id: 3, title: "가챠샵 쇼핑", image: "/images/illust_3.jpg" },
 ]
 
 export function Illustrations() {
@@ -40,9 +40,9 @@ export function Illustrations() {
               <div className="relative aspect-[3/4] overflow-hidden rounded-xl bg-white/[0.03] border border-white/10 hover:border-[#A78BFA]/50 hover:shadow-[0_0_20px_rgba(167,139,250,0.15)] transition-all duration-300">
                 {/* Scale target */}
                 <motion.div 
-                  className="absolute inset-0 flex items-center justify-center bg-gradient-to-br from-secondary to-muted transition-transform duration-500 group-hover:scale-105"
+                  className="absolute inset-0 transition-transform duration-500 group-hover:scale-105"
                 >
-                  <span className="text-muted-foreground/50 text-sm">Image Placeholder</span>
+                  <img src={item.image} alt={item.title} className="w-full h-full object-cover" />
                 </motion.div>
                 
                 {/* Hover overlay hint */}
