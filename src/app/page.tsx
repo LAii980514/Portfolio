@@ -4,7 +4,7 @@ import { FeaturedProjects } from "@/components/portfolio/featured-projects"
 import { About } from "@/components/portfolio/about"
 import { Illustrations } from "@/components/portfolio/illustrations"
 import { Timeline } from "@/components/portfolio/timeline"
-import { Gallery } from "@/components/portfolio/gallery"
+import { OtherProjects } from "@/components/portfolio/other-projects"
 import { Contact } from "@/components/portfolio/contact"
 import { Footer } from "@/components/portfolio/footer"
 
@@ -17,10 +17,10 @@ export default function Home() {
       <Navigation />
       <Hero />
       <FeaturedProjects />
+      <OtherProjects />
       <About />
       <Timeline />
       <Illustrations />
-      <Gallery />
       <Contact />
       <Footer />
     </main>

@@ -3,11 +3,13 @@
 import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
+import Link from "next/link"
 
 const navItems = [
-  { name: "Portfolio", href: "#portfolio" },
-  { name: "About Me", href: "#about" },
-  { name: "Contact", href: "#contact" },
+  { name: "Portfolio", href: "/#portfolio" },
+  { name: "About Me", href: "/#about" },
+  { name: "Gallery", href: "/gallery" },
+  { name: "Contact", href: "/#contact" },
 ]
 
 export function Navigation() {
@@ -44,14 +46,15 @@ export function Navigation() {
           <ul className="hidden md:flex items-center gap-10">
             {navItems.map((item) => (
               <li key={item.name}>
-                <motion.a
-                  href={item.href}
-                  className="text-sm tracking-widest uppercase font-semibold text-neutral-400 hover:text-white transition-colors duration-300"
-                  whileHover={{ opacity: 0.7 }}
-                  transition={{ duration: 0.2 }}
-                >
-                  {item.name}
-                </motion.a>
+                <Link href={item.href} passHref legacyBehavior>
+                  <motion.a
+                    className="text-sm tracking-widest uppercase font-semibold text-neutral-400 hover:text-white transition-colors duration-300"
+                    whileHover={{ opacity: 0.7 }}
+                    transition={{ duration: 0.2 }}
+                  >
+                    {item.name}
+                  </motion.a>
+                </Link>
               </li>
             ))}
           </ul>
@@ -79,17 +82,17 @@ export function Navigation() {
           >
             <nav className="flex flex-col items-center justify-center h-full gap-8">
               {navItems.map((item, index) => (
-                <motion.a
-                  key={item.name}
-                  href={item.href}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ delay: index * 0.1 }}
-                  className="text-2xl font-medium text-foreground hover:text-primary transition-colors"
-                  onClick={() => setIsMobileMenuOpen(false)}
-                >
-                  {item.name}
-                </motion.a>
+                <Link href={item.href} key={item.name} passHref legacyBehavior>
+                  <motion.a
+                    initial={{ opacity: 0, y: 20 }}
+                    animate={{ opacity: 1, y: 0 }}
+                    transition={{ delay: index * 0.1 }}
+                    className="text-2xl font-medium text-foreground hover:text-primary transition-colors"
+                    onClick={() => setIsMobileMenuOpen(false)}
+                  >
+                    {item.name}
+                  </motion.a>
+                </Link>
               ))}
             </nav>
           </motion.div>
