@@ -124,7 +124,7 @@ export function FeaturedProjects() {
                     href={`https://youtube.com/watch?v=${project.youtubeId}`}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-1 items-center justify-center px-4 py-3 bg-white text-black hover:bg-neutral-200 rounded-none font-bold transition-colors text-xs"
+                    className="flex flex-1 items-center justify-center px-6 py-3 bg-white text-black hover:bg-neutral-200 rounded-full font-bold transition-colors text-xs"
                   >
                     <Play className="w-3.5 h-3.5 mr-2 fill-current" />
                     시청하기
@@ -133,7 +133,7 @@ export function FeaturedProjects() {
                     href={project.docLink}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="flex flex-1 items-center justify-center px-4 py-3 bg-transparent border border-white/20 text-white hover:bg-white/10 rounded-none font-bold transition-all text-xs"
+                    className="flex flex-1 items-center justify-center px-6 py-3 bg-transparent border border-white/20 text-white hover:bg-white/10 rounded-full font-bold transition-all text-xs"
                   >
                     <FileText className="w-3.5 h-3.5 mr-2" />
                     기획서 보기
