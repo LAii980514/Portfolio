@@ -37,7 +37,7 @@ export function Navigation() {
           
           {/* Logo */}
           <div className="font-extrabold text-lg tracking-tight text-white">
-            레벨 디자이너 LAi
+            레벨 디자이너 라이
           </div>
 
           {/* Desktop Navigation */}
