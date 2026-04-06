@@ -5,10 +5,10 @@ import { ArrowDown } from "lucide-react"
 
 export function Hero() {
   return (
-    <section className="relative w-full min-h-screen flex flex-col justify-end overflow-hidden bg-black text-white px-4 md:px-12 lg:px-24 pb-12 pt-32">
+    <section className="relative w-full min-h-screen flex flex-col justify-center items-center overflow-hidden bg-black text-white px-4 md:px-12 pb-12 pt-24 text-center">
       {/* Container for the huge typography */}
-      <div className="flex-1 flex flex-col justify-center">
-        <h1 className="flex flex-col font-black tracking-tighter uppercase leading-[0.85] text-[15vw] sm:text-[14vw] md:text-[12vw] lg:text-[11vw] text-left">
+      <div className="flex flex-col justify-center items-center w-full mt-auto">
+        <h1 className="flex flex-col font-black tracking-tighter uppercase leading-[0.85] text-[15vw] sm:text-[14vw] md:text-[12vw] lg:text-[11vw] text-center w-full">
           <motion.span
             initial={{ opacity: 0, y: 50 }}
             animate={{ opacity: 1, y: 0 }}
@@ -37,12 +37,12 @@ export function Hero() {
       </div>
 
       {/* Bottom section with subtitle and scroll indicator */}
-      <div className="w-full flex flex-col sm:flex-row justify-between items-start sm:items-end mt-12 gap-8">
+      <div className="w-full flex flex-col items-center justify-center mt-12 mb-auto gap-8 text-center pt-8">
         <motion.div
-          initial={{ opacity: 0, x: -20 }}
-          animate={{ opacity: 1, x: 0 }}
+          initial={{ opacity: 0, y: 20 }}
+          animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, delay: 0.5, ease: [0.16, 1, 0.3, 1] }}
-          className="max-w-md"
+          className="max-w-md mx-auto"
         >
           <p className="text-xl md:text-2xl font-medium text-neutral-300">
             시선을 이끄는 감각으로,<br />
@@ -57,7 +57,7 @@ export function Hero() {
           initial={{ opacity: 0, scale: 0.8 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.7, ease: [0.16, 1, 0.3, 1] }}
-          className="flex items-center justify-center p-4 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors cursor-pointer"
+          className="flex items-center justify-center p-4 mt-4 border border-white/20 rounded-full hover:bg-white hover:text-black transition-colors cursor-pointer"
           onClick={() => {
             const el = document.getElementById("portfolio");
             el?.scrollIntoView({ behavior: "smooth" });
