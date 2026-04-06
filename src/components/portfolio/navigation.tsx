@@ -35,9 +35,9 @@ export function Navigation() {
       >
         <nav className="w-full max-w-7xl px-4 md:px-6 flex items-center justify-between">
           
-          {/* Logo (V0 Brutalist Style) */}
-          <div className="font-black text-2xl tracking-tighter text-white">
-            LEVEL.D©
+          {/* Logo */}
+          <div className="font-extrabold text-lg tracking-tight text-white">
+            레벨 디자이너 LAi
           </div>
 
           {/* Desktop Navigation */}
