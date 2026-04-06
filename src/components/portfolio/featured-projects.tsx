@@ -20,8 +20,6 @@ const featuredProjects = [
     youtubeId: "LXb3EKWsInQ", 
     docLink: "#",
     image: "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&q=80&w=1200",
-    gridClass: "col-span-12 md:col-start-1 md:col-span-7 mt-0",
-    aspectClass: "aspect-[16/9]"
   },
   {
     id: 2,
@@ -38,44 +36,6 @@ const featuredProjects = [
     youtubeId: "aqz-KE-bpKQ", 
     docLink: "#",
     image: "https://images.unsplash.com/photo-1509281373149-e957c6296406?auto=format&fit=crop&q=80&w=800",
-    gridClass: "col-span-12 md:col-start-9 md:col-span-4 mt-12 md:mt-[120px]",
-    aspectClass: "aspect-[3/4]"
-  },
-  {
-    id: 3,
-    title: "VOID MAG",
-    subtitle: "ENVIRONMENT DESIGN / EXPLORATION",
-    genre: "Environment Design",
-    engine: "UNREAL ENGINE 5",
-    mapSize: "1km x 1km",
-    role: "월드 빌딩 및 최적화",
-    bullets: [
-      "숨겨진 경로와 비밀이 있는 탐험 중심의 환경 구축"
-    ],
-    tags: ["UE5", "World Building", "Optimization", "Foliage"],
-    youtubeId: "dQw4w9WgXcQ", 
-    docLink: "#",
-    image: "https://images.unsplash.com/photo-1515462277126-2dd0c162007a?auto=format&fit=crop&q=80&w=800",
-    gridClass: "col-span-12 md:col-start-2 md:col-span-4 mt-12 md:-mt-[60px]",
-    aspectClass: "aspect-square"
-  },
-  {
-    id: 4,
-    title: "STATIC MOTION",
-    subtitle: "LIGHTING / MODULAR LEVEL",
-    genre: "Lighting Design",
-    engine: "UNREAL ENGINE 5",
-    mapSize: "실내 모듈식 세트",
-    role: "모듈형 에셋 조립 및 라이팅",
-    bullets: [
-      "동적인 조명 상태를 가진 모듈형 피스 시스템 구축"
-    ],
-    tags: ["Lighting", "Modular", "Lumen", "Sci-Fi"],
-    youtubeId: "yO7MRb0P4sg", 
-    docLink: "#",
-    image: "https://images.unsplash.com/photo-1550684848-fac1c5b4e853?auto=format&fit=crop&q=80&w=1200",
-    gridClass: "col-span-12 md:col-start-7 md:col-span-6 mt-12 md:mt-[80px]",
-    aspectClass: "aspect-[16/9]"
   }
 ]
 
@@ -98,8 +58,8 @@ export function FeaturedProjects() {
           </h2>
         </motion.div>
 
-        {/* 12-Column Grids from VOID Template */}
-        <div className="grid grid-cols-1 md:grid-cols-12 gap-x-10 gap-y-16">
+        {/* V1 "More Posts" Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32">
           {featuredProjects.map((project, index) => (
             <motion.article
               key={project.id}
@@ -111,9 +71,9 @@ export function FeaturedProjects() {
                 ease: [0.16, 1, 0.3, 1],
                 delay: index * 0.1
               }}
-              className={`flex flex-col ${project.gridClass}`}
+              className="flex flex-col"
             >
-              <div className={`relative w-full ${project.aspectClass} bg-zinc-900 flex-shrink-0 overflow-hidden pointer-events-none`}>
+              <div className="relative w-full aspect-video bg-zinc-900 flex-shrink-0 overflow-hidden pointer-events-none mb-5">
                 <iframe
                   className="absolute inset-0 w-full h-full object-cover scale-[1.3]"
                   src={`https://www.youtube.com/embed/${project.youtubeId}?autoplay=1&mute=1&loop=1&playlist=${project.youtubeId}&controls=0&showinfo=0&rel=0&modestbranding=1`}
