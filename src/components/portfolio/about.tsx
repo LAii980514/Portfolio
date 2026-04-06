@@ -29,11 +29,13 @@ export function About() {
             className="relative shrink-0 w-full max-w-[300px]"
           >
             <div className="relative aspect-[3/4] max-h-[400px] rounded-xl overflow-hidden bg-gradient-to-br from-secondary to-muted">
-              <div className="absolute inset-0 flex items-center justify-center text-muted-foreground/50">
-                김용언
-              </div>
+              <img 
+                src="/images/profile.jpg" 
+                alt="김용언 프로필" 
+                className="absolute inset-0 w-full h-full object-cover"
+              />
               {/* Decorative border */}
-              <div className="absolute inset-0 rounded-xl border border-border" />
+              <div className="absolute inset-0 rounded-xl border border-border pointer-events-none" />
             </div>
             {/* Floating accent */}
             <motion.div
