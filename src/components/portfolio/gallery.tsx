@@ -5,13 +5,13 @@ import { motion, AnimatePresence } from "framer-motion"
 import { X } from "lucide-react"
 
 const galleryImages = [
-  { id: 1, title: "대성당 내부", aspect: "portrait", src: "" },
+  { id: 1, title: "도쿄 스카이트리", aspect: "portrait", src: "/images/gallery_3.jpg" },
   { id: 2, title: "호숫가 공원", aspect: "landscape", src: "/images/gallery_1.jpg" },
   { id: 3, title: "도심 전경", aspect: "landscape", src: "/images/gallery_2.jpg" },
-  { id: 4, title: "석양의 전경", aspect: "portrait", src: "" },
-  { id: 5, title: "지하 연구소", aspect: "landscape", src: "" },
+  { id: 4, title: "도쿄 타워", aspect: "portrait", src: "/images/gallery_4.jpg" },
+  { id: 5, title: "오후의 도심", aspect: "landscape", src: "/images/gallery_5.jpg" },
   { id: 6, title: "산 정상", aspect: "portrait", src: "" },
-  { id: 7, title: "도시 옥상", aspect: "landscape", src: "" },
+  { id: 7, title: "철도 풍경", aspect: "landscape", src: "/images/gallery_6.jpg" },
   { id: 8, title: "고대 유적", aspect: "landscape", src: "" },
 ]
 
