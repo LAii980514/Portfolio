@@ -2,7 +2,7 @@ import { Navigation } from "@/components/portfolio/navigation"
 import { Hero } from "@/components/portfolio/hero"
 import { FeaturedProjects } from "@/components/portfolio/featured-projects"
 import { About } from "@/components/portfolio/about"
-import { Illustrations } from "@/components/portfolio/illustrations"
+
 import { Timeline } from "@/components/portfolio/timeline"
 import { OtherProjects } from "@/components/portfolio/other-projects"
 import { Contact } from "@/components/portfolio/contact"
@@ -20,7 +20,7 @@ export default function Home() {
       <OtherProjects />
       <About />
       <Timeline />
-      <Illustrations />
+
       <Contact />
       <Footer />
     </main>

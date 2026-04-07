@@ -46,15 +46,14 @@ export function Navigation() {
           <ul className="hidden md:flex items-center gap-10">
             {navItems.map((item) => (
               <li key={item.name}>
-                <Link href={item.href} passHref legacyBehavior>
-                  <motion.a
+                <motion.div whileHover={{ opacity: 0.7 }} transition={{ duration: 0.2 }}>
+                  <Link 
+                    href={item.href}
                     className="text-sm tracking-widest uppercase font-semibold text-neutral-400 hover:text-white transition-colors duration-300"
-                    whileHover={{ opacity: 0.7 }}
-                    transition={{ duration: 0.2 }}
                   >
                     {item.name}
-                  </motion.a>
-                </Link>
+                  </Link>
+                </motion.div>
               </li>
             ))}
           </ul>
@@ -82,17 +81,20 @@ export function Navigation() {
           >
             <nav className="flex flex-col items-center justify-center h-full gap-8">
               {navItems.map((item, index) => (
-                <Link href={item.href} key={item.name} passHref legacyBehavior>
-                  <motion.a
-                    initial={{ opacity: 0, y: 20 }}
-                    animate={{ opacity: 1, y: 0 }}
-                    transition={{ delay: index * 0.1 }}
+                <motion.div
+                  key={item.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                >
+                  <Link 
+                    href={item.href}
                     className="text-2xl font-medium text-foreground hover:text-primary transition-colors"
                     onClick={() => setIsMobileMenuOpen(false)}
                   >
                     {item.name}
-                  </motion.a>
-                </Link>
+                  </Link>
+                </motion.div>
               ))}
             </nav>
           </motion.div>
