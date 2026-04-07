@@ -11,10 +11,10 @@ export default function GalleryPage() {
       <Navigation />
       
       {/* 
-        Add enough top padding so the Gallery isn't hidden 
-        under the fixed navigation bar
+        The Navigation is now sticky on this page, 
+        so we only need a normal top padding 
       */}
-      <div className="w-full flex-1 pt-24 pb-12 flex flex-col items-center">
+      <div className="w-full flex-1 pt-12 pb-12 flex flex-col items-center">
         <Gallery />
       </div>
 

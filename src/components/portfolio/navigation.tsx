@@ -4,6 +4,7 @@ import { useState, useEffect } from "react"
 import { motion, AnimatePresence } from "framer-motion"
 import { Menu, X } from "lucide-react"
 import Link from "next/link"
+import { usePathname } from "next/navigation"
 
 const navItems = [
   { name: "Portfolio", href: "/#portfolio" },
@@ -15,11 +16,14 @@ const navItems = [
 export function Navigation() {
   const [isScrolled, setIsScrolled] = useState(false)
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
+  const pathname = usePathname()
+  const isGallery = pathname === "/gallery"
 
   useEffect(() => {
     const handleScroll = () => {
       setIsScrolled(window.scrollY > 50)
     }
+    handleScroll()
     window.addEventListener("scroll", handleScroll)
     return () => window.removeEventListener("scroll", handleScroll)
   }, [])
@@ -30,8 +34,8 @@ export function Navigation() {
         initial={{ y: -100 }}
         animate={{ y: 0 }}
         transition={{ duration: 0.6, ease: [0.22, 1, 0.36, 1] }}
-        className={`fixed top-0 left-0 right-0 z-50 transition-all duration-500 w-full flex justify-center ${isScrolled
-            ? "py-3 bg-background/70 backdrop-blur-xl border-b border-border/50"
+        className={`${isGallery ? "sticky" : "fixed"} top-0 left-0 right-0 z-50 transition-all duration-500 w-full flex justify-center ${isScrolled || isGallery
+            ? "py-3 bg-[#0a0a0a] border-b border-white/10"
             : "py-6 bg-transparent"
           }`}
       >

@@ -60,9 +60,9 @@ const illustrations = [
   { id: 1, title: "오피스 라이프", image: "/images/illust_1.jpg" },
   { id: 2, title: "나른한 오후",   image: "/images/illust_2.jpg" },
   { id: 3, title: "가챠샵 쇼핑",   image: "/images/illust_3.jpg" },
-  { id: 4, title: "추가 예정",     image: "" },
-  { id: 5, title: "추가 예정",     image: "" },
-  { id: 6, title: "추가 예정",     image: "" },
+  { id: 4, title: "학교의 선생님", image: "/images/illust_4.jpg" },
+  { id: 5, title: "하교길 경계",   image: "/images/illust_5.jpg" },
+  { id: 6, title: "여름 바다",     image: "/images/illust_6.jpg" },
 ]
 
 type Tab = "gallery" | "illustrations"
@@ -100,34 +100,34 @@ export function Gallery() {
 
         {/* Tabs */}
         <motion.div
-          initial={{ opacity: 0, y: 20 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          viewport={{ once: true }}
-          transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
-          className="flex gap-1 mb-10 p-1 rounded-xl bg-white/[0.04] border border-white/[0.08] w-fit"
-        >
-          {tabs.map((tab) => (
-            <button
-              key={tab.id}
-              id={`gallery-tab-${tab.id}`}
-              onClick={() => setActiveTab(tab.id)}
-              className={`relative px-5 py-2 text-sm font-semibold rounded-lg transition-colors duration-200 outline-none ${
-                activeTab === tab.id
-                  ? "text-white"
-                  : "text-neutral-400 hover:text-neutral-200"
-              }`}
-            >
-              {activeTab === tab.id && (
-                <motion.div
-                  layoutId="active-tab-bg"
-                  className="absolute inset-0 bg-white/10 rounded-lg border border-white/20"
-                  transition={{ type: "spring", stiffness: 400, damping: 35 }}
-                />
-              )}
-              <span className="relative z-10">{tab.label}</span>
-            </button>
-          ))}
-        </motion.div>
+           initial={{ opacity: 0, y: 20 }}
+           whileInView={{ opacity: 1, y: 0 }}
+           viewport={{ once: true }}
+           transition={{ duration: 0.6, delay: 0.1, ease: [0.16, 1, 0.3, 1] }}
+           className="flex gap-2 mb-12 p-1.5 rounded-2xl bg-white/[0.03] border border-white/10 w-fit"
+         >
+           {tabs.map((tab) => (
+             <button
+               key={tab.id}
+               id={`gallery-tab-${tab.id}`}
+               onClick={() => setActiveTab(tab.id)}
+               className={`relative px-6 py-2.5 text-sm md:text-base font-bold rounded-xl transition-all duration-300 outline-none ${
+                 activeTab === tab.id
+                   ? "text-black shadow-sm"
+                   : "text-neutral-400 hover:text-white"
+               }`}
+             >
+               {activeTab === tab.id && (
+                 <motion.div
+                   layoutId="active-tab-bg"
+                   className="absolute inset-0 bg-white rounded-xl"
+                   transition={{ type: "spring", stiffness: 400, damping: 35 }}
+                 />
+               )}
+               <span className="relative z-10">{tab.label}</span>
+             </button>
+           ))}
+         </motion.div>
 
         {/* Tab Content */}
         <AnimatePresence mode="wait">
