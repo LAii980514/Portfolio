@@ -70,7 +70,7 @@ const Profile = () => {
         {/* Avatar Image Placeholder */}
         <motion.div 
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUpVariant}
-          style={{ flex: '0 0 300px' }}
+          style={{ flex: '0 0 250px' }}
         >
           <div className="surface-1" style={{ 
             width: '100%', 
@@ -89,30 +89,44 @@ const Profile = () => {
         {/* Profile Content */}
         <motion.div 
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUpVariant}
-          style={{ flex: '1 1 500px', display: 'flex', flexDirection: 'column', justifyContent: 'center' }}
+          style={{ flex: '1 1 500px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}
         >
           <h2 className="text-eyebrow" style={{ marginBottom: 'var(--spacing-xs)' }}>PROFILE</h2>
-          <h3 className="text-display-md" style={{ marginBottom: 'var(--spacing-xxs)' }}>김용언</h3>
-          <p className="text-body-lg" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-lg)' }}>레벨디자이너</p>
+          <h3 className="text-display-md" style={{ marginBottom: 'var(--spacing-md)', marginLeft: '-4px' }}>김용언</h3>
           
-          <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-xl)', maxWidth: '600px' }}>
-            안녕하세요, 몰입감 있는 공간과 스토리를 만드는 레벨디자이너 김용언입니다. 플레이어가 게임 세계에 깊이 빠져들 수 있도록, 환경 스토리텔링과 치밀한 동선 설계를 결합하는 작업에 언제나 열정을 쏟고 있습니다.<br /><br />
-            시각적인 아름다움을 넘어, 공간이 주는 감정적인 울림과 직관적인 플레이 메커니즘을 잇는 다리 역할을 지향합니다.
-          </p>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '16px', maxWidth: '620px', wordBreak: 'keep-all' }}>
+            <p className="text-body-md" style={{ color: 'var(--colors-ink)', fontWeight: 600, lineHeight: 1.7 }}>
+              안녕하세요. 플레이 경험과 아름다움이 공존하는 공간을 만드는 레벨디자이너 김용언입니다.
+            </p>
+            
+            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', lineHeight: 1.7 }}>
+              좋은 레벨은 둘 중 하나만으로는 완성되지 않는다고 생각합니다. 테마에 맞는 플레이와, 그 플레이에 어울리는 배경. 이 둘이 한쪽으로 기울지 않을 때 플레이어는 그 세상에 자연스럽게 몰입합니다.
+            </p>
 
-          <motion.div 
-            initial={{ opacity: 0, y: 20 }} whileInView={{ opacity: 1, y: 0 }} viewport={{ once: true }} transition={{ duration: 0.8, delay: 0.2 }}
-            style={{ display: 'flex', flexWrap: 'wrap', gap: 'var(--spacing-xl)' }}
-          >
-            {skills.map(skill => (
-              <SkillCircle key={skill.name} name={skill.name} percentage={skill.percentage} iconId={skill.iconId} iconText={skill.iconText} iconImage={skill.iconImage} iconColor={skill.iconColor} />
-            ))}
-          </motion.div>
+            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', lineHeight: 1.7 }}>
+              동선만 있는 공간은 기억에 남지 않고, 보기에만 좋은 공간은 시선은 붙잡아도 재미가 떨어집니다. 어느 한쪽을 포기하면 결국 어색한 공간이 됩니다.
+            </p>
 
+            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', lineHeight: 1.7 }}>
+              그래서 저는 동선과 시야로 길을 직관적으로 읽게 만들고, 7년간 틈틈이 그려온 눈으로 어울리는 분위기를 더합니다. 그 균형을 통해, 플레이어가 단순한 플레이를 넘어 그 세계에 머무르도록 안내하는 인도자. 그런 사람이 되고 싶습니다.
+            </p>
+          </div>
 
         </motion.div>
-
       </div>
+
+      {/* SKILLS Section (Moved to full width for better layout balance) */}
+      <motion.div 
+        initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUpVariant}
+        style={{ marginTop: 'var(--spacing-xl)', paddingTop: 'var(--spacing-md)', borderTop: '1px solid var(--colors-hairline)' }}
+      >
+        <h2 className="text-eyebrow" style={{ marginBottom: 'var(--spacing-md)' }}>SKILLS & TOOLS</h2>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px' }}>
+          {skills.map(skill => (
+            <SkillCircle key={skill.name} name={skill.name} percentage={skill.percentage} iconId={skill.iconId} iconText={skill.iconText} iconImage={skill.iconImage} iconColor={skill.iconColor} />
+          ))}
+        </div>
+      </motion.div>
     </section>
   );
 };
