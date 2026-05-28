@@ -21,12 +21,12 @@ const SkillCircle = ({ name, percentage, iconId, iconText, iconImage, iconColor 
             fill="transparent"
             stroke="var(--colors-primary)"
             strokeWidth="4"
-            strokeDasharray={circumference}
+            strokeDasharray={`${circumference} ${circumference}`}
             initial={{ strokeDashoffset: circumference }}
             whileInView={{ strokeDashoffset }}
             viewport={{ once: true, margin: "-50px" }}
             transition={{ duration: 1.5, ease: "easeOut", delay: 0.2 }}
-            strokeLinecap="round"
+            strokeLinecap="butt"
           />
         </svg>
         <div style={{ 
@@ -34,9 +34,9 @@ const SkillCircle = ({ name, percentage, iconId, iconText, iconImage, iconColor 
           display: 'flex', alignItems: 'center', justifyContent: 'center'
         }}>
           {iconImage ? (
-            <img src={iconImage} alt={`${name} logo`} style={{ width: '40px', height: '40px', objectFit: 'contain', mixBlendMode: 'screen' }} />
+            <img src={iconImage} alt={`${name} logo`} style={{ width: '28px', height: '28px', objectFit: 'contain', mixBlendMode: 'screen' }} />
           ) : iconId ? (
-            <img src={`/svgs/${iconId}.svg`} alt={`${name} logo`} style={{ width: '36px', height: '36px' }} />
+            <img src={`/svgs/${iconId}.svg`} alt={`${name} logo`} style={{ width: '28px', height: '28px' }} />
           ) : iconText ? (
             <span style={{ fontSize: '18px', fontWeight: 800, color: 'var(--colors-ink-muted)' }}>{iconText}</span>
           ) : (
