@@ -218,11 +218,11 @@ const Gallery = () => {
                           alt={photo.title}
                           loading="lazy"
                           decoding="async"
-                          style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                          onLoad={(e) => e.target.style.opacity = 1}
+                          style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0, transition: 'opacity 0.5s ease' }}
                           variants={{
                             hover: { scale: 1.05 }
                           }}
-                          transition={{ duration: 0.4 }}
                         />
                       )}
                       {/* Hover Overlay with Text */}
@@ -300,7 +300,9 @@ const Gallery = () => {
                       <motion.img
                         src={`/${ill.id}.jpg`}
                         alt={ill.title}
-                        style={{ width: '100%', height: '100%', objectFit: 'cover' }}
+                        loading="lazy"
+                        onLoad={(e) => e.target.style.opacity = 1}
+                        style={{ width: '100%', height: '100%', objectFit: 'cover', opacity: 0, transition: 'opacity 0.5s ease' }}
                       />
                     </motion.div>
                     <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '8px' }}>
@@ -361,13 +363,16 @@ const Gallery = () => {
                           alt={art.title}
                           loading="lazy"
                           decoding="async"
+                          onLoad={(e) => e.target.style.opacity = 1}
                           style={{
                             width: '100%',
                             height: '100%',
                             display: 'block',
                             objectFit: 'cover',
                             imageRendering: '-webkit-optimize-contrast',
-                            transform: 'translateZ(0)'
+                            transform: 'translateZ(0)',
+                            opacity: 0,
+                            transition: 'opacity 0.5s ease'
                           }}
                         />
                       </motion.div>
@@ -411,12 +416,16 @@ const Gallery = () => {
                           alt={fanarts[selectedFanartIndex].title}
                           loading="lazy"
                           decoding="async"
+                          key={`main-${selectedFanartIndex}`}
+                          onLoad={(e) => e.target.style.opacity = 1}
                           style={{
                             width: '100%',
                             height: '100%',
                             objectFit: 'contain',
                             imageRendering: '-webkit-optimize-contrast',
-                            transform: 'translateZ(0)'
+                            transform: 'translateZ(0)',
+                            opacity: 0,
+                            transition: 'opacity 0.3s ease'
                           }}
                         />
                         <div style={{
