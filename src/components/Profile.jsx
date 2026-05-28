@@ -70,7 +70,7 @@ const Profile = () => {
         {/* Avatar Image Placeholder */}
         <motion.div 
           initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUpVariant}
-          style={{ flex: '0 0 250px' }}
+          style={{ flex: '0 0 280px' }}
         >
           <div className="surface-1" style={{ 
             width: '100%', 
