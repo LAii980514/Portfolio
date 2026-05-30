@@ -65,10 +65,10 @@ const Gallery = () => {
     "hanatan_banner.jpg", "KakaoTalk_20260527_225601214_27.jpg", "KakaoTalk_20260527_225601214_28.jpg",
     "KakaoTalk_20260527_225606799.jpg", "gstar_2014.jpg", "KakaoTalk_20260527_225606799_03.jpg",
     "KakaoTalk_20260527_225606799_04.jpg", "KakaoTalk_20260527_225606799_05.jpg", "KakaoTalk_20260527_225606799_06.jpg",
-    "KakaoTalk_20260527_225606799_07.jpg", "KakaoTalk_20260527_225606799_08.jpg", "KakaoTalk_20260527_225606799_09.jpg",
-    "KakaoTalk_20260527_225606799_10.jpg", "KakaoTalk_20260527_225606799_11.jpg", "KakaoTalk_20260527_225606799_12.jpg",
-    "new_image_1.jpg",
-    "KakaoTalk_20260528_044159821.jpg", "KakaoTalk_20260528_044159821_01.jpg", "new_image_2.jpg",
+    "KakaoTalk_20260527_225606799_07.jpg", "KakaoTalk_20260527_225606799_08.jpg", "new_image_1.jpg",
+    "KakaoTalk_20260527_225606799_10.jpg", "KakaoTalk_20260527_225606799_11.jpg", "new_image_2.jpg",
+    "KakaoTalk_20260527_225601214_06.jpg",
+    "KakaoTalk_20260528_044159821.jpg", "KakaoTalk_20260528_044159821_01.jpg", "KakaoTalk_20260528_044159821_02.jpg",
     "KakaoTalk_20260528_044159821_03.jpg", "KakaoTalk_20260528_044159821_04.jpg", "KakaoTalk_20260528_044159821_05.jpg",
     "KakaoTalk_20260528_044159821_06.jpg", "KakaoTalk_20260528_044159821_07.jpg"
   ];
