@@ -73,12 +73,22 @@ const Gallery = () => {
     "KakaoTalk_20260528_044159821_06.jpg", "KakaoTalk_20260528_044159821_07.jpg"
   ];
 
-  const fanarts = animationPhotos.map((filename, i) => ({
-    id: i + 1,
-    title: `내 오프라인 컬렉션 ${i + 1}`,
-    description: `제 방에 소중하게 장식해 둔 오프라인 굿즈 컬렉션입니다.`,
-    src: `/animation/${filename}`
-  }));
+  const fanarts = animationPhotos.map((filename, i) => {
+    let title = `내 오프라인 컬렉션 ${i + 1}`;
+    let description = `제 방에 소중하게 장식해 둔 오프라인 굿즈 컬렉션입니다.`;
+    
+    if (i === 35) {
+      title = "명조 2주년 페스티벌 행사";
+      description = "치사탈과 같이 찍은 사진입니다.";
+    }
+
+    return {
+      id: i + 1,
+      title,
+      description,
+      src: `/animation/${filename}`
+    };
+  });
 
   const containerVariants = {
     hidden: { opacity: 0 },
