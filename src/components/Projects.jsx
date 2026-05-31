@@ -91,7 +91,7 @@ const Projects = () => {
             >
               {/* Image Side */}
               <div style={{ 
-                flex: '0 0 42%', 
+                flex: '1 1 55%', 
                 backgroundColor: 'var(--colors-surface-2)',
                 display: 'flex',
                 alignItems: 'center',
@@ -137,7 +137,7 @@ const Projects = () => {
 
               {/* Content Side */}
               <div style={{ 
-                flex: '1 1 58%', 
+                flex: '1 1 45%', 
                 padding: 'var(--spacing-xl) var(--spacing-xxl)',
                 display: 'flex',
                 flexDirection: 'column',
