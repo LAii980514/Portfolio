@@ -53,8 +53,8 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
         style={{ position: 'absolute', bottom: 'var(--spacing-section)', right: 'var(--spacing-xl)', textAlign: 'left', maxWidth: '400px' }}
       >
-        <p style={{ fontSize: '22px', lineHeight: '1.5', fontWeight: 500, color: 'var(--colors-ink-muted)', marginBottom: '12px' }}>
-          시선을 이끄는 감각으로,<br />플레이 경험을 설계합니다.
+        <p style={{ fontSize: '22px', lineHeight: '1.5', fontWeight: 500, color: 'var(--colors-ink-muted)', marginBottom: '12px', wordBreak: 'keep-all' }}>
+          동선으로 이끌고 분위기로 머물게 하는,<br />기억에 남는 플레이 경험을 설계합니다.
         </p>
         <p style={{ fontSize: '18px', fontWeight: 600, color: 'var(--colors-ink-subtle)' }}>
           레벨디자이너 김용언
