@@ -16,8 +16,8 @@ export const mainProjects = [
     videoId: 'b3vxNhd6nbE',
     mainImage: '/project1_main_v2.jpg',
     docLink: '#', // TODO: Add real Google Drive link
-    coreExperience: '동적 조명과 폐쇄된 공간을 활용한 긴장감 넘치는 스텔스 경험',
-    references: '컨트롤, 엘런 웨이크, 바이오하자드'
+    coreExperience: '목표에 다가갈수록 다양한 플레이 경험을 배치해, 각 공간마다 다르게 플레이 변화를 주어 지루함을 덜어내고 공간의 밀도를 높인다.',
+    references: '언차티드 4, 스텔라 블레이드, 툼레이더'
   },
   {
     id: 2,
