@@ -86,12 +86,12 @@ const Projects = () => {
                 flexDirection: isLeft ? 'row' : 'row-reverse',
                 borderRadius: 'var(--rounded-xl)',
                 overflow: 'hidden',
-                minHeight: '450px' // Ensure a nice tall card
+                minHeight: '360px' // Reduced height
               }}
             >
               {/* Image Side */}
               <div style={{ 
-                flex: '1 1 50%', 
+                flex: '0 0 42%', 
                 backgroundColor: 'var(--colors-surface-2)',
                 display: 'flex',
                 alignItems: 'center',
@@ -137,7 +137,7 @@ const Projects = () => {
 
               {/* Content Side */}
               <div style={{ 
-                flex: '1 1 50%', 
+                flex: '1 1 58%', 
                 padding: 'var(--spacing-xl) var(--spacing-xxl)',
                 display: 'flex',
                 flexDirection: 'column',
