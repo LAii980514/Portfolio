@@ -17,7 +17,13 @@ export const mainProjects = [
     mainImage: '/project1_main_v2.jpg',
     docLink: '#', // TODO: Add real Google Drive link
     coreExperience: '각 공간의 테마에 맞춰 서로 다른 플레이 경험을 배치해, 구간마다 색다른 재미로 레벨의 밀도를 높인다.',
-    references: '언차티드 4, 스텔라 블레이드, 툼레이더'
+    references: '언차티드 4, 스텔라 블레이드, 툼레이더',
+    screenshots: [
+      '/project1_screen1.jpg',
+      '/project1_screen2.jpg',
+      '/project1_screen3.jpg',
+      '/project1_screen4.jpg'
+    ]
   },
   {
     id: 2,

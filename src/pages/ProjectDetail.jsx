@@ -202,7 +202,7 @@ const ProjectDetail = () => {
         <section className="container" style={{ padding: '0 var(--spacing-xl)', marginBottom: 'var(--spacing-xxl)', display: 'flex', justifyContent: 'center' }}>
           <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant} style={{ width: '100%', maxWidth: '1100px' }}>
             <h2 className="text-display-sm" style={{ marginBottom: 'var(--spacing-lg)', color: '#ffffff', fontWeight: 800 }}>
-              전체 맵 및 스크린샷
+              조감도
             </h2>
             
             <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: 'var(--rounded-xl)', overflow: 'hidden', backgroundColor: 'var(--colors-surface-2)', border: '1px solid var(--colors-hairline)' }}>
@@ -215,26 +215,34 @@ const ProjectDetail = () => {
                   transition={{ duration: 0.3 }}
                   style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--colors-surface-1)' }}
                 >
-                  <span className="text-display-sm" style={{ color: 'var(--colors-ink-subtle)' }}>Image Placeholder {currentImageIndex + 1}</span>
+                  {project.screenshots && project.screenshots.length > 0 ? (
+                    <img 
+                      src={project.screenshots[currentImageIndex]} 
+                      alt={`Screenshot ${currentImageIndex + 1}`} 
+                      style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                    />
+                  ) : (
+                    <span className="text-display-sm" style={{ color: 'var(--colors-ink-subtle)' }}>Image Placeholder {currentImageIndex + 1}</span>
+                  )}
                 </motion.div>
               </AnimatePresence>
               
               <button 
-                onClick={() => setCurrentImageIndex(prev => (prev === 0 ? 2 : prev - 1))}
+                onClick={() => setCurrentImageIndex(prev => (prev === 0 ? (project.screenshots ? project.screenshots.length - 1 : 2) : prev - 1))}
                 style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'rgba(0,0,0,0.5)', border: 'none', borderRadius: '50%', width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff', backdropFilter: 'blur(4px)' }}
               >
                 <ChevronLeft size={24} />
               </button>
               
               <button 
-                onClick={() => setCurrentImageIndex(prev => (prev === 2 ? 0 : prev + 1))}
+                onClick={() => setCurrentImageIndex(prev => (prev === (project.screenshots ? project.screenshots.length - 1 : 2) ? 0 : prev + 1))}
                 style={{ position: 'absolute', right: '16px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'rgba(0,0,0,0.5)', border: 'none', borderRadius: '50%', width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff', backdropFilter: 'blur(4px)' }}
               >
                 <ChevronRight size={24} />
               </button>
               
               <div style={{ position: 'absolute', bottom: '16px', left: '50%', transform: 'translateX(-50%)', display: 'flex', gap: '8px' }}>
-                {[0, 1, 2].map(idx => (
+                {(project.screenshots ? project.screenshots : [0, 1, 2]).map((_, idx) => (
                   <button 
                     key={idx}
                     onClick={() => setCurrentImageIndex(idx)}
