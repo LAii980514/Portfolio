@@ -89,12 +89,48 @@ const Gallery = () => {
     } else if (i === 6) {
       title = "블루 아카이브 온리전 1";
       description = "블루 아카이브 4주년 온리전 때 찍었던 사진입니다.";
+    } else if (i === 7) {
+      title = "블루 아카이브 온리전 2";
+      description = "블루 아카이브 4주년 온리전 때 찍은 코하루 등신대입니다.";
+    } else if (i === 8) {
+      title = "호요랜드 사진 1";
+      description = "호요랜드에 방문하여 찍은 폼폼 인형탈입니다.";
+    } else if (i === 9) {
+      title = "블루 아카이브 콜라보 카페";
+      description = "용산 도파민 존에서 콜라보 카페를 방문했을 때 찍은 사진입니다.";
+    } else if (i === 10) {
+      title = "스텔라이브 콜라보 카페 1";
+      description = "애니플러스 스텔라이브 클리셰 콜라보 카페에 방문하여 찍은 사진입니다.";
+    } else if (i === 11) {
+      title = "지하철 광고 1";
+      description = "홀로라이브 지하철 광고 배너를 찍은 사진입니다.";
+    } else if (i === 12) {
+      title = "2026년 플레이 엑스포";
+      description = "2026년 플레이 엑스포를 다녀와서 찍은 사진입니다. 일러스타 페스도 함께 방문했습니다.";
+    } else if (i === 13) {
+      title = "일러스타 페스 굿즈";
+      description = "2026년 5월에 방문한 일러스타 페스에서 구매한 굿즈 사진입니다.";
+    } else if (i === 14) {
+      title = "지하철 광고 2";
+      description = "서울역에서 스텔라이브 광고 배너를 찍은 사진입니다.";
+    } else if (i === 15) {
+      title = "애니메 티셔츠";
+      description = "일본 현지에서 직접 구입한 옷을 입고 찍은 사진입니다.";
+    } else if (i === 16) {
+      title = "홀로라이브 등신대";
+      description = "일본 현지에서 홀로라이브 EN 이나 등신대를 찍은 사진입니다.";
+    } else if (i === 17) {
+      title = "스텔라이브 팝업샵";
+      description = "홍대 스텔라이브 팝업샵을 방문하여 입구에서 찍은 사진입니다.";
     } else if (i === 26) {
       title = "인생 업적";
       description = "제가 그린 팬아트가 즐겨보는 버츄얼 유튜버 방송 공지에 올라가서 찍은 사진입니다.";
     } else if (i === 29) {
       title = "블루 아카이브 온리전 3";
       description = "블루 아카이브 2.5주년 온리전 때 찍은 사진입니다.";
+    } else if (i === 30) {
+      title = "일본 성지순례";
+      description = "일본에 직접 방문하여 봇치 더 락 성지순례를 하며 찍은 사진입니다.";
     } else if (i === 35) {
       title = "명조 2주년 페스티벌 행사";
       description = "치사탈과 같이 찍은 사진입니다.";
