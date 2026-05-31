@@ -86,9 +86,30 @@ const Gallery = () => {
     } else if (i === 5) {
       title = "금강선님의 강연";
       description = "G-CON 2023때 로스트아크 12년간의 개발 비화 강연을 들으면서 찍은 사진입니다.";
+    } else if (i === 6) {
+      title = "블루 아카이브 온리전 1";
+      description = "블루 아카이브 4주년 온리전 때 찍었던 사진입니다.";
+    } else if (i === 26) {
+      title = "인생 업적";
+      description = "제가 그린 팬아트가 즐겨보는 버츄얼 유튜버 방송 공지에 올라가서 찍은 사진입니다.";
+    } else if (i === 29) {
+      title = "블루 아카이브 온리전 3";
+      description = "블루 아카이브 2.5주년 온리전 때 찍은 사진입니다.";
     } else if (i === 35) {
       title = "명조 2주년 페스티벌 행사";
       description = "치사탈과 같이 찍은 사진입니다.";
+    } else if (i === 42) {
+      title = "용산 아이파크 도파민 존";
+      description = "용산 아이파크 방문했을 때 찍었던 사진입니다. 슈엔, 귀엽습니다.";
+    } else if (i === 44) {
+      title = "유형석 PD님의 강연";
+      description = "NDC 때 니케로 강연하실 때 찍은 사진입니다.";
+    } else if (i === 46) {
+      title = "블루 아카이브 온리전 4";
+      description = "블루 아카이브 2.5주년 온리전 때 찍은 사진입니다.";
+    } else if (i === 47) {
+      title = "붕괴 스타레일 성우 사인";
+      description = "붕괴 스타레일 부트힐 성우님의 사인입니다. 추첨을 통해 받았습니다.";
     }
 
     return {
