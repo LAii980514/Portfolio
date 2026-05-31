@@ -4,8 +4,8 @@ export const mainProjects = [
     title: "빛에 잠긴 미술관",
     genre: "액션 어드벤처",
     engine: "언리얼 엔진 5.7",
-    mapSize: "30일",
-    role: "11분",
+    mapSize: "36일",
+    role: "12분",
     bullets: [
       "환경 내러티브로 동선을 읽게 하는 길찾기 설계",
       "기믹을 학습하고 응용하게 하는 퍼즐 구성",
