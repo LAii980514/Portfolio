@@ -267,7 +267,7 @@ const Projects = () => {
                   {project.year}
                 </span>
               </div>
-              <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-md)', flex: 1, lineHeight: 1.5 }}>
+              <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-md)', flex: 1, lineHeight: 1.5, wordBreak: 'keep-all' }}>
                 {project.description}
               </p>
               
