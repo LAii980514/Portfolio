@@ -141,9 +141,22 @@ const Projects = () => {
                 flexDirection: 'column',
                 justifyContent: 'center'
               }}>
-                <h4 className="text-display-sm" style={{ fontSize: '32px', fontWeight: 700, marginBottom: 'var(--spacing-lg)' }}>
-                  {project.title}
-                </h4>
+                <div style={{ display: 'flex', alignItems: 'center', gap: '12px', marginBottom: 'var(--spacing-lg)' }}>
+                  <h4 className="text-display-sm" style={{ fontSize: '32px', fontWeight: 700, margin: 0 }}>
+                    {project.title}
+                  </h4>
+                  <span style={{ 
+                    fontSize: '13px', 
+                    fontWeight: 700, 
+                    color: 'var(--colors-primary)', 
+                    backgroundColor: 'var(--colors-surface-2)',
+                    padding: '4px 12px',
+                    borderRadius: 'var(--rounded-pill)',
+                    border: '1px solid var(--colors-hairline)'
+                  }}>
+                    2026
+                  </span>
+                </div>
                 
                 {/* Meta Grid */}
                 <div style={{ 
