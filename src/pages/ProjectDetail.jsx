@@ -119,7 +119,7 @@ const ProjectDetail = () => {
                       <span className="text-body-sm" style={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
                         <FileText size={16} /> 기획서 미리보기
                       </span>
-                      <a href={project.docLink} target="_blank" rel="noopener noreferrer" className="button button-primary" style={{ gap: '6px', fontSize: '13px', padding: '6px 12px' }}>
+                      <a href={project.docLink} target="_blank" rel="noopener noreferrer" className="button button-outline" style={{ gap: '6px', fontSize: '13px', padding: '6px 12px' }}>
                         기획서 보기 <ExternalLink size={14} />
                       </a>
                     </div>
