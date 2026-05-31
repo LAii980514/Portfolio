@@ -80,7 +80,7 @@ const Contact = () => {
               </div>
               <div style={{ display: 'flex', flexDirection: 'column', gap: '6px' }}>
                 <span className="text-body-sm" style={{ color: 'var(--colors-ink-subtle)', fontWeight: 500 }}>Phone</span>
-                <a href="tel:010-0000-0000" style={{ fontSize: '28px', fontWeight: 600, color: 'var(--colors-ink)', textDecoration: 'none' }}>010-0000-0000</a>
+                <a href="tel:010-6797-6245" style={{ fontSize: '28px', fontWeight: 600, color: 'var(--colors-ink)', textDecoration: 'none' }}>010 6797 6245</a>
               </div>
             </div>
 
