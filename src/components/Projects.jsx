@@ -279,9 +279,9 @@ const Projects = () => {
                 gap: '8px',
                 marginTop: 'auto'
               }}>
-                <Link to={`/project/${project.id}`} style={{ textDecoration: 'none', width: '100%' }}>
-                  <button className="button button-outline" style={{ width: '100%', display: 'flex', justifyContent: 'center', alignItems: 'center', gap: '6px', padding: '8px 12px', fontSize: '14px' }}>
-                    자세히 보기 <ArrowRight size={14} />
+                <Link to={`/project/${project.id}`} style={{ textDecoration: 'none' }}>
+                  <button className="button button-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px' }}>
+                    기획서 보기 <ArrowRight size={16} />
                   </button>
                 </Link>
               </div>

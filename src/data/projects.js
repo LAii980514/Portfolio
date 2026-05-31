@@ -87,8 +87,8 @@ export const otherProjects = [
     year: '2024',
     genre: '액션 RPG',
     engine: '언리얼 엔진 5',
-    mapSize: '230m x 180m',
-    role: '레벨 디자인 기획',
+    mapSize: '14일',
+    role: '4분',
     coreExperience: '내부와 외부를 교차하며 점진적으로 상승하는 난도와 전투 패턴을 학습하는 경험',
     docLink: 'https://drive.google.com/file/d/1Rmr9RPlbrdRC5Rb8YEfyY7BLYIT4aJzx/view?usp=sharing',
     videoId: 'NqPXfOUyDkQ'
