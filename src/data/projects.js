@@ -1,7 +1,7 @@
 export const mainProjects = [
   {
     id: 1,
-    title: "침수된 젠 가든",
+    title: "빛에 잠긴 미술관",
     genre: "액션 어드벤처",
     engine: "언리얼 엔진 5.7",
     mapSize: "30일",
@@ -13,7 +13,8 @@ export const mainProjects = [
     ],
     tags: ["파쿠르", "창작 레벨", "안도 다다오", "미술관"],
     alignImage: 'left',
-    videoId: 'eioYulMp_5k',
+    videoId: 'b3vxNhd6nbE',
+    mainImage: '/project1_main.jpg',
     docLink: '#', // TODO: Add real Google Drive link
     coreExperience: '동적 조명과 폐쇄된 공간을 활용한 긴장감 넘치는 스텔스 경험',
     references: '컨트롤, 엘런 웨이크, 바이오하자드'

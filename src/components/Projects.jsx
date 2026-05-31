@@ -99,7 +99,22 @@ const Projects = () => {
                 position: 'relative',
                 overflow: 'hidden'
               }}>
-                {project.videoId ? (
+                {project.mainImage ? (
+                  <Link to={`/project/${project.id}`} style={{ width: '100%', height: '100%', display: 'block', cursor: 'pointer' }}>
+                    <img 
+                      src={project.mainImage} 
+                      alt={project.title} 
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        transition: 'transform 0.3s ease',
+                      }}
+                      onMouseOver={(e) => { e.currentTarget.style.transform = 'scale(1.05)'; }}
+                      onMouseOut={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
+                    />
+                  </Link>
+                ) : project.videoId ? (
                   <iframe 
                     src={`https://www.youtube.com/embed/${project.videoId}?autoplay=1&mute=1&loop=1&playlist=${project.videoId}&controls=0&showinfo=0&rel=0&modestbranding=1`}
                     style={{
