@@ -77,7 +77,10 @@ const Gallery = () => {
     let title = `내 오프라인 컬렉션 ${i + 1}`;
     let description = `제 방에 소중하게 장식해 둔 오프라인 굿즈 컬렉션입니다.`;
     
-    if (i === 35) {
+    if (i === 3) {
+      title = "김용하 본부장님과 찍은 사진";
+      description = "지스타 G-CON에서 강연을 들은 후 찍은 사진입니다.";
+    } else if (i === 35) {
       title = "명조 2주년 페스티벌 행사";
       description = "치사탈과 같이 찍은 사진입니다.";
     }
