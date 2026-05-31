@@ -93,14 +93,11 @@ const Projects = () => {
               <div style={{ 
                 flex: '1 1 55%', 
                 backgroundColor: 'var(--colors-surface-2)',
-                display: 'flex',
-                alignItems: 'center',
-                justifyContent: 'center',
                 position: 'relative',
                 overflow: 'hidden'
               }}>
                 {project.mainImage ? (
-                  <Link to={`/project/${project.id}`} style={{ width: '100%', height: '100%', display: 'block', cursor: 'pointer' }}>
+                  <Link to={`/project/${project.id}`} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'block', cursor: 'pointer' }}>
                     <img 
                       src={project.mainImage} 
                       alt={project.title} 
@@ -108,6 +105,7 @@ const Projects = () => {
                         width: '100%',
                         height: '100%',
                         objectFit: 'cover',
+                        display: 'block',
                         transition: 'transform 0.3s ease',
                       }}
                       onMouseOver={(e) => { e.currentTarget.style.transform = 'scale(1.05)'; }}

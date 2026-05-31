@@ -213,16 +213,16 @@ const ProjectDetail = () => {
                   animate={{ opacity: 1, x: 0 }}
                   exit={{ opacity: 0, x: -50 }}
                   transition={{ duration: 0.3 }}
-                  style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--colors-surface-1)' }}
+                  style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--colors-surface-1)', position: 'relative' }}
                 >
                   {project.screenshots && project.screenshots.length > 0 ? (
                     <img 
                       src={project.screenshots[currentImageIndex]} 
                       alt={`Screenshot ${currentImageIndex + 1}`} 
-                      style={{ width: '100%', height: '100%', objectFit: 'cover' }} 
+                      style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} 
                     />
                   ) : (
-                    <span className="text-display-sm" style={{ color: 'var(--colors-ink-subtle)' }}>Image Placeholder {currentImageIndex + 1}</span>
+                    <span className="text-display-sm" style={{ color: 'var(--colors-ink-subtle)', position: 'relative', zIndex: 1 }}>Image Placeholder {currentImageIndex + 1}</span>
                   )}
                 </motion.div>
               </AnimatePresence>
