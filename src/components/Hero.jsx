@@ -54,7 +54,7 @@ const Hero = () => {
         style={{ position: 'absolute', bottom: 'var(--spacing-section)', right: 'var(--spacing-xl)', textAlign: 'left', maxWidth: '400px' }}
       >
         <p style={{ fontSize: '22px', lineHeight: '1.5', fontWeight: 500, color: 'var(--colors-ink-muted)', marginBottom: '12px', wordBreak: 'keep-all' }}>
-          동선으로 이끌고 분위기로 머물게 하는,<br />기억에 남는 플레이 경험을 설계합니다.
+          동선과 분위기로 이끌어,<br />오래 기억에 남는 플레이 경험을 만듭니다.
         </p>
         <p style={{ fontSize: '18px', fontWeight: 600, color: 'var(--colors-ink-subtle)' }}>
           레벨디자이너 김용언
