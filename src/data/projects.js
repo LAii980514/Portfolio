@@ -14,7 +14,7 @@ export const mainProjects = [
     tags: ["파쿠르", "창작 레벨", "안도 다다오", "미술관"],
     alignImage: 'left',
     videoId: 'b3vxNhd6nbE',
-    mainImage: '/project1_main.jpg',
+    mainImage: '/project1_main_v2.jpg',
     docLink: '#', // TODO: Add real Google Drive link
     coreExperience: '동적 조명과 폐쇄된 공간을 활용한 긴장감 넘치는 스텔스 경험',
     references: '컨트롤, 엘런 웨이크, 바이오하자드'
