@@ -83,6 +83,9 @@ const Gallery = () => {
     } else if (i === 4) {
       title = "김형태 대표님과 찍은 사진";
       description = "니케 출시 하기 전 오프라인 행사때 사인회에서 인사드리고 찍은 사진입니다.";
+    } else if (i === 5) {
+      title = "금강선님의 강연";
+      description = "G-CON 2023때 로스트아크 12년간의 개발 비화 강연을 들으면서 찍은 사진입니다.";
     } else if (i === 35) {
       title = "명조 2주년 페스티벌 행사";
       description = "치사탈과 같이 찍은 사진입니다.";
