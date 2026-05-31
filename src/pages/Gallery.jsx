@@ -80,6 +80,9 @@ const Gallery = () => {
     if (i === 3) {
       title = "김용하 본부장님과 찍은 사진";
       description = "지스타 G-CON에서 강연을 들은 후 찍은 사진입니다.";
+    } else if (i === 4) {
+      title = "김형태 대표님과 찍은 사진";
+      description = "니케 출시 하기 전 오프라인 행사때 사인회에서 인사드리고 찍은 사진입니다.";
     } else if (i === 35) {
       title = "명조 2주년 페스티벌 행사";
       description = "치사탈과 같이 찍은 사진입니다.";
@@ -125,7 +128,7 @@ const Gallery = () => {
             style={{ marginBottom: 'var(--spacing-xl)' }}
           >
             <h1 className="text-display-md" style={{ marginBottom: 'var(--spacing-xs)' }}>갤러리</h1>
-            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-md)' }}>
+            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-md)', wordBreak: 'keep-all' }}>
               개인 일러스트, 서브컬쳐 활동, 그리고 아름다운 풍경 사진들을 기록해 둔 저만의 공간입니다.
             </p>
 
@@ -463,7 +466,7 @@ const Gallery = () => {
                             No. {selectedFanartIndex + 1}
                           </span>
                         </div>
-                        <p style={{ color: 'var(--colors-ink-muted)', fontSize: '13px', lineHeight: 1.5, margin: 0 }}>
+                        <p style={{ color: 'var(--colors-ink-muted)', fontSize: '13px', lineHeight: 1.5, margin: 0, wordBreak: 'keep-all' }}>
                           {fanarts[selectedFanartIndex].description}
                         </p>
                       </div>
