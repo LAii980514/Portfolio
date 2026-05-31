@@ -22,7 +22,11 @@ export const mainProjects = [
       '/project1_screen1.jpg',
       '/project1_screen2.jpg',
       '/project1_screen3.jpg',
-      '/project1_screen4.jpg'
+      '/project1_screen4.jpg',
+      '/project1_screen5.jpg',
+      '/project1_screen6.jpg',
+      '/project1_screen7.jpg',
+      '/project1_screen8.jpg'
     ]
   },
   {
