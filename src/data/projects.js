@@ -73,8 +73,8 @@ export const otherProjects = [
     year: '2024',
     genre: '멀티플레이 레이드',
     engine: '언리얼 엔진 5',
-    mapSize: '292m x 142m',
-    role: '레벨/기믹 디자인',
+    mapSize: '14일',
+    role: '예상플레이 25분~30분',
     coreExperience: '상황에 따른 파티 분할과 오브젝트 투척 등 유기적인 협력을 요구하는 레이드 전투 경험',
     docLink: 'https://drive.google.com/file/d/1S6QoFr6Ce1Gl2yVJcnqcRNaZhmoS5Oeb/view?usp=sharing',
     videoId: 'sH5tL1whafg'

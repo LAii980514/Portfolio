@@ -11,11 +11,9 @@ const Contact = () => {
         whileInView={{ opacity: 1, y: 0 }}
         viewport={{ once: true, margin: "-100px" }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
-        className="surface-1"
         style={{ 
           width: '100%',
-          padding: 'var(--spacing-xxl) 48px',
-          borderRadius: 'var(--rounded-xl)',
+          padding: 'var(--spacing-md) 0',
           display: 'flex',
           flexDirection: 'column',
           gap: '32px'
