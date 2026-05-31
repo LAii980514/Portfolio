@@ -59,8 +59,8 @@ export const otherProjects = [
     year: '2024',
     genre: '액션 RPG',
     engine: '언리얼 엔진 5',
-    mapSize: '530m x 420m',
-    role: '레벨 디자인 기획',
+    mapSize: '45일',
+    role: '12분',
     coreExperience: '명확한 랜드마크와 시각적 유도를 통한 자유도 높은 오픈월드 탐험 경험',
     docLink: 'https://drive.google.com/file/d/1DmuTaflTyD5ehoVilrYIn54dy7hasonz/view?usp=sharing',
     videoId: 'GLXku7q29JQ'
