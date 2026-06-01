@@ -18,7 +18,7 @@ const Gallery = () => {
     window.scrollTo(0, 0);
   }, []);
 
-  const photos = [
+    const photos = [
     { id: 1, title: '풍경 1', src: '/picture/KakaoTalk_20260407_050129203_01.jpg', bentoClass: 'bento-large' },
     { id: 2, title: '풍경 2', src: '/picture/KakaoTalk_20260407_050129203_03.jpg', bentoClass: 'bento-wide' },
     { id: 3, title: '풍경 3', src: '/picture/KakaoTalk_20260407_050129203_04.jpg', bentoClass: 'bento-small' },
@@ -39,13 +39,12 @@ const Gallery = () => {
     { id: 18, title: '풍경 18', src: '/picture/KakaoTalk_20260528_051324908_03.jpg', bentoClass: 'bento-large' },
     { id: 19, title: '풍경 19', src: '/picture/KakaoTalk_20260528_051324908_04.jpg', bentoClass: 'bento-tall' },
     { id: 20, title: '풍경 20', src: '/picture/KakaoTalk_20260528_051324908_05.jpg', bentoClass: 'bento-small' },
-    { id: 21, title: '풍경 21', src: '/picture/KakaoTalk_20260528_051324908_06.jpg', bentoClass: 'bento-wide' },
-    { id: 22, title: '풍경 22', src: '/picture/KakaoTalk_20260528_051324908_07.jpg', bentoClass: 'bento-small' },
-    { id: 23, title: '풍경 23', src: '/picture/KakaoTalk_20260528_051324908_08.jpg', bentoClass: 'bento-wide' },
-    { id: 24, title: '풍경 24', src: '/picture/KakaoTalk_20260528_051324908_09.jpg', bentoClass: 'bento-tall' },
-    { id: 25, title: '풍경 25', src: '/picture/KakaoTalk_20260528_051324908_10.jpg', bentoClass: 'bento-small' },
-    { id: 26, title: '풍경 26', src: '/picture/KakaoTalk_20260528_051324908_11.jpg', bentoClass: 'bento-large' },
-    { id: 27, title: '풍경 27', src: '/picture/KakaoTalk_20260528_051324908_12.jpg', bentoClass: 'bento-wide' }
+    { id: 21, title: '풍경 21', src: '/picture/KakaoTalk_20260528_051324908_07.jpg', bentoClass: 'bento-small' },
+    { id: 22, title: '풍경 22', src: '/picture/KakaoTalk_20260528_051324908_08.jpg', bentoClass: 'bento-small' },
+    { id: 23, title: '풍경 23', src: '/picture/KakaoTalk_20260528_051324908_09.jpg', bentoClass: 'bento-tall' },
+    { id: 24, title: '풍경 24', src: '/picture/KakaoTalk_20260528_051324908_10.jpg', bentoClass: 'bento-small' },
+    { id: 25, title: '풍경 25', src: '/picture/KakaoTalk_20260528_051324908_11.jpg', bentoClass: 'bento-wide' },
+    { id: 26, title: '풍경 26', src: '/picture/KakaoTalk_20260528_051324908_12.jpg', bentoClass: 'bento-small' }
   ];
 
   const illustrations = [
@@ -389,9 +388,7 @@ const Gallery = () => {
                           <h3 style={{ color: '#fff', fontSize: '20px', fontWeight: 900, marginBottom: '4px' }}>
                             {photo.title}
                           </h3>
-                          <p style={{ color: 'rgba(255,255,255,0.7)', fontSize: '12px', fontWeight: 600, letterSpacing: '1px' }}>
-                            LANDSCAPE / PHOTOGRAPHY
-                          </p>
+                          
                         </motion.div>
                       )}
                     </motion.div>
