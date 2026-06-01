@@ -190,7 +190,7 @@ const Gallery = () => {
       title = "명조 2주년 페스티벌 행사 3";
       description = "명조 2주년 페스티벌을 방문하여 찍은 사진입니다.";
     } else if (i === 40) {
-      title = "스텔라이브 단독 콘서트.";
+      title = "스텔라이브 단독 콘서트";
       description = "스텔라이브 첫 오프라인 콘서트를 방문했을 때 찍은 사진입니다.";
     } else if (i === 41) {
       title = "일러스타 페스 도우미 참여";
@@ -255,7 +255,7 @@ const Gallery = () => {
           >
             <h1 className="text-display-md" style={{ marginBottom: 'var(--spacing-xs)' }}>갤러리</h1>
             <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-md)', wordBreak: 'keep-all' }}>
-              개인 일러스트, 서브컬처 활동, 그리고 아름다운 풍경 사진들을 기록해 둔 저만의 공간입니다.
+              개인 일러스트, 서브컬처 활동, 그리고 아름다운 풍경 사진들을 기록해 둔 공간입니다.
             </p>
 
             {/* Tab System */}
