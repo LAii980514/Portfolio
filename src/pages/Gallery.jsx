@@ -70,7 +70,7 @@ const Gallery = () => {
     "KakaoTalk_20260527_225601214_23.jpg", "KakaoTalk_20260527_225601214_24.jpg", "KakaoTalk_20260527_225601214_05.jpg",
     "hanatan_banner.jpg", "KakaoTalk_20260527_225601214_27.jpg", "KakaoTalk_20260527_225601214_28.jpg",
     "KakaoTalk_20260527_225606799.jpg", "gstar_2014.jpg", "KakaoTalk_20260527_225606799_03.jpg",
-    "KakaoTalk_20260527_225606799_04.jpg", "KakaoTalk_20260527_225606799_05.jpg", "KakaoTalk_20260527_225606799_06.jpg",
+    "KakaoTalk_20260527_225606799_04.jpg", "KakaoTalk_20260527_225606799_05.jpg", "wuthering_waves_2nd_anniv.jpg",
     "KakaoTalk_20260527_225606799_07.jpg", "KakaoTalk_20260527_225606799_08.jpg", "new_image_1.jpg",
     "KakaoTalk_20260527_225606799_10.jpg", "KakaoTalk_20260527_225606799_11.jpg", "new_image_2.jpg",
     "KakaoTalk_20260527_225601214_06.jpg",
@@ -170,6 +170,9 @@ const Gallery = () => {
     } else if (i === 31) {
       title = "붕괴 스타레일 콜라보";
       description = "강남역 붕괴 스타레일과 갤럭시 스마트폰 콜라보 때 찍은 사진입니다.";
+    } else if (i === 32) {
+      title = "명조 2주년 페스티벌 행사";
+      description = "친구의 2차 창작부스 도우미로 참여했습니다.";
     } else if (i === 33) {
       title = "블루 아카이브 온리전 4";
       description = "블루 아카이브 2.5주년 온리전 때 찍은 사진입니다.";
