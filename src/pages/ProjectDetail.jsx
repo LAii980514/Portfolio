@@ -10,6 +10,7 @@ const ProjectDetail = () => {
   const allProjects = [...mainProjects, ...otherProjects];
   const project = allProjects.find(p => p.id === parseInt(id));
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [direction, setDirection] = useState(0);
 
   // 항상 페이지 최상단에서 시작
   useEffect(() => {
@@ -28,6 +29,21 @@ const ProjectDetail = () => {
   const fadeUpVariant = {
     hidden: { opacity: 0, y: 30 },
     visible: { opacity: 1, y: 0, transition: { duration: 0.6, ease: "easeOut" } }
+  };
+
+  const slideVariants = {
+    enter: (direction) => ({
+      x: direction > 0 ? 50 : -50,
+      opacity: 0
+    }),
+    center: {
+      x: 0,
+      opacity: 1
+    },
+    exit: (direction) => ({
+      x: direction < 0 ? 50 : -50,
+      opacity: 0
+    })
   };
 
   return (
@@ -207,12 +223,14 @@ const ProjectDetail = () => {
               </h2>
               
               <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: 'var(--rounded-xl)', overflow: 'hidden', backgroundColor: 'var(--colors-surface-2)', border: '1px solid var(--colors-hairline)' }}>
-                <AnimatePresence mode="wait">
+                <AnimatePresence mode="wait" custom={direction}>
                   <motion.div
                     key={currentImageIndex}
-                    initial={{ opacity: 0, x: 50 }}
-                    animate={{ opacity: 1, x: 0 }}
-                    exit={{ opacity: 0, x: -50 }}
+                    custom={direction}
+                    variants={slideVariants}
+                    initial="enter"
+                    animate="center"
+                    exit="exit"
                     transition={{ duration: 0.3 }}
                     style={{ width: '100%', height: '100%', display: 'flex', alignItems: 'center', justifyContent: 'center', backgroundColor: 'var(--colors-surface-1)', position: 'relative' }}
                   >
@@ -225,14 +243,20 @@ const ProjectDetail = () => {
                 </AnimatePresence>
                 
                 <button 
-                  onClick={() => setCurrentImageIndex(prev => (prev === 0 ? project.screenshots.length - 1 : prev - 1))}
+                  onClick={() => {
+                    setDirection(-1);
+                    setCurrentImageIndex(prev => (prev === 0 ? project.screenshots.length - 1 : prev - 1));
+                  }}
                   style={{ position: 'absolute', left: '16px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'rgba(0,0,0,0.5)', border: 'none', borderRadius: '50%', width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff', backdropFilter: 'blur(4px)' }}
                 >
                   <ChevronLeft size={24} />
                 </button>
                 
                 <button 
-                  onClick={() => setCurrentImageIndex(prev => (prev === project.screenshots.length - 1 ? 0 : prev + 1))}
+                  onClick={() => {
+                    setDirection(1);
+                    setCurrentImageIndex(prev => (prev === project.screenshots.length - 1 ? 0 : prev + 1));
+                  }}
                   style={{ position: 'absolute', right: '16px', top: '50%', transform: 'translateY(-50%)', backgroundColor: 'rgba(0,0,0,0.5)', border: 'none', borderRadius: '50%', width: '48px', height: '48px', display: 'flex', alignItems: 'center', justifyContent: 'center', cursor: 'pointer', color: '#fff', backdropFilter: 'blur(4px)' }}
                 >
                   <ChevronRight size={24} />
@@ -242,7 +266,12 @@ const ProjectDetail = () => {
                   {project.screenshots.map((_, idx) => (
                     <button 
                       key={idx}
-                      onClick={() => setCurrentImageIndex(idx)}
+                      onClick={() => {
+                        if (idx !== currentImageIndex) {
+                          setDirection(idx > currentImageIndex ? 1 : -1);
+                          setCurrentImageIndex(idx);
+                        }
+                      }}
                       style={{ 
                         width: '10px', height: '10px', borderRadius: '50%', border: 'none', cursor: 'pointer',
                         backgroundColor: currentImageIndex === idx ? 'var(--colors-primary)' : 'rgba(255,255,255,0.3)',
