@@ -61,125 +61,124 @@ const Gallery = () => {
 
   const animationPhotos = [
     "KakaoTalk_20260527_225601214_14.jpg", "KakaoTalk_20260527_225601214_13.jpg", "KakaoTalk_20260527_225601214_12.jpg",
-    "KakaoTalk_20260527_225601214_19.jpg", "KakaoTalk_20260527_225601214_25.jpg", "KakaoTalk_20260527_225606799_13.jpg",
-    "KakaoTalk_20260527_225601214_07.jpg", "KakaoTalk_20260527_225601214_08.jpg", "KakaoTalk_20260527_225601214_09.jpg",
-    "KakaoTalk_20260527_225601214_10.jpg", "KakaoTalk_20260527_225601214_11.jpg", "KakaoTalk_20260527_225601214_03.jpg",
-    "KakaoTalk_20260527_225601214_01.jpg", "KakaoTalk_20260527_225601214.jpg", "KakaoTalk_20260527_225601214_16.jpg",
-    "KakaoTalk_20260527_225601214_17.jpg", "KakaoTalk_20260527_225601214_18.jpg", "KakaoTalk_20260527_225601214_04.jpg",
-    "KakaoTalk_20260527_225601214_20.jpg", "KakaoTalk_20260527_225601214_21.jpg", "KakaoTalk_20260527_225601214_22.jpg",
-    "KakaoTalk_20260527_225601214_23.jpg", "KakaoTalk_20260527_225601214_24.jpg", "KakaoTalk_20260527_225601214_05.jpg",
-    "hanatan_banner.jpg", "KakaoTalk_20260527_225601214_27.jpg", "KakaoTalk_20260527_225601214_28.jpg",
-    "KakaoTalk_20260527_225606799.jpg", "gstar_2014.jpg", "KakaoTalk_20260527_225606799_03.jpg",
-    "KakaoTalk_20260527_225606799_04.jpg", "KakaoTalk_20260527_225606799_05.jpg", "wuthering_waves_2nd_anniv.jpg",
-    "KakaoTalk_20260527_225606799_07.jpg", "KakaoTalk_20260527_225606799_08.jpg", "new_image_1.jpg",
-    "KakaoTalk_20260527_225606799_10.jpg", "KakaoTalk_20260527_225606799_11.jpg", "new_image_2.jpg",
-    "KakaoTalk_20260527_225601214_06.jpg",
-    "KakaoTalk_20260528_044159821.jpg", "KakaoTalk_20260528_044159821_01.jpg", "KakaoTalk_20260528_044159821_02.jpg",
-    "KakaoTalk_20260528_044159821_03.jpg", "KakaoTalk_20260528_044159821_04.jpg", "KakaoTalk_20260528_044159821_05.jpg",
-    "KakaoTalk_20260528_044159821_06.jpg", "KakaoTalk_20260528_044159821_07.jpg"
+    "KakaoTalk_20260527_225606799_10.jpg", "KakaoTalk_20260527_225601214_19.jpg", "KakaoTalk_20260527_225601214_25.jpg",
+    "KakaoTalk_20260527_225606799_13.jpg", "KakaoTalk_20260527_225601214_07.jpg", "KakaoTalk_20260527_225601214_08.jpg",
+    "KakaoTalk_20260527_225601214_09.jpg", "KakaoTalk_20260527_225601214_10.jpg", "KakaoTalk_20260527_225601214_11.jpg",
+    "KakaoTalk_20260527_225601214_03.jpg", "KakaoTalk_20260527_225601214_01.jpg", "KakaoTalk_20260527_225601214.jpg",
+    "KakaoTalk_20260527_225601214_16.jpg", "KakaoTalk_20260527_225601214_17.jpg", "KakaoTalk_20260527_225601214_18.jpg",
+    "KakaoTalk_20260527_225601214_04.jpg", "KakaoTalk_20260527_225601214_20.jpg", "KakaoTalk_20260527_225601214_21.jpg",
+    "KakaoTalk_20260527_225601214_22.jpg", "KakaoTalk_20260527_225601214_23.jpg", "KakaoTalk_20260527_225601214_24.jpg",
+    "KakaoTalk_20260527_225601214_05.jpg", "hanatan_banner.jpg", "KakaoTalk_20260527_225601214_27.jpg",
+    "KakaoTalk_20260527_225601214_28.jpg", "KakaoTalk_20260527_225606799.jpg", "gstar_2014.jpg",
+    "KakaoTalk_20260527_225606799_03.jpg", "KakaoTalk_20260527_225606799_04.jpg", "KakaoTalk_20260527_225606799_05.jpg",
+    "wuthering_waves_2nd_anniv.jpg", "KakaoTalk_20260527_225606799_07.jpg", "KakaoTalk_20260527_225606799_08.jpg",
+    "new_image_1.jpg", "KakaoTalk_20260527_225606799_11.jpg", "new_image_2.jpg",
+    "KakaoTalk_20260527_225601214_06.jpg", "KakaoTalk_20260528_044159821.jpg", "KakaoTalk_20260528_044159821_01.jpg",
+    "KakaoTalk_20260528_044159821_02.jpg", "KakaoTalk_20260528_044159821_03.jpg", "KakaoTalk_20260528_044159821_04.jpg",
+    "KakaoTalk_20260528_044159821_05.jpg", "KakaoTalk_20260528_044159821_06.jpg", "KakaoTalk_20260528_044159821_07.jpg"
   ];
 
   const fanarts = animationPhotos.map((filename, i) => {
     let title = `내 오프라인 컬렉션 ${i + 1}`;
     let description = `제 방에 소중하게 장식해 둔 오프라인 굿즈 컬렉션입니다.`;
     
-    if (i === 3) {
+    if (i === 4) {
       title = "김용하 본부장님과 찍은 사진";
       description = "지스타 G-CON에서 강연을 들은 후 찍은 사진입니다.";
-    } else if (i === 4) {
+    } else if (i === 5) {
       title = "김형태 대표님과 찍은 사진";
       description = "니케 출시 전 오프라인 행사 때 사인회에서 인사드리고 찍은 사진입니다.";
-    } else if (i === 5) {
+    } else if (i === 6) {
       title = "금강선님의 강연";
       description = "G-CON 2023 때 로스트아크 12년 개발 비화 강연을 들으며 찍은 사진입니다.";
-    } else if (i === 6) {
+    } else if (i === 7) {
       title = "블루 아카이브 온리전 1";
       description = "블루 아카이브 4주년 온리전 때 찍었던 사진입니다.";
-    } else if (i === 7) {
+    } else if (i === 8) {
       title = "블루 아카이브 온리전 2";
       description = "블루 아카이브 4주년 온리전 때 찍은 코하루 등신대입니다.";
-    } else if (i === 8) {
+    } else if (i === 9) {
       title = "호요랜드 사진 1";
       description = "호요랜드에 방문하여 찍은 폼폼 인형탈입니다.";
-    } else if (i === 9) {
+    } else if (i === 10) {
       title = "블루 아카이브 콜라보 카페";
       description = "용산 도파민 존의 콜라보 카페에 방문했을 때 찍은 사진입니다.";
-    } else if (i === 10) {
+    } else if (i === 11) {
       title = "스텔라이브 콜라보 카페 1";
       description = "애니플러스 스텔라이브 클리셰 콜라보 카페에 방문하여 찍은 사진입니다.";
-    } else if (i === 11) {
+    } else if (i === 12) {
       title = "지하철 광고 1";
       description = "홀로라이브 지하철 광고 배너를 찍은 사진입니다.";
-    } else if (i === 12) {
+    } else if (i === 13) {
       title = "2026년 플레이 엑스포";
       description = "2026년 플레이 엑스포를 다녀와서 찍은 사진입니다. 일러스타 페스도 함께 방문했습니다.";
-    } else if (i === 13) {
+    } else if (i === 14) {
       title = "일러스타 페스";
       description = "2026년 5월에 방문한 일러스타 페스에서 구매한 굿즈 사진입니다.";
-    } else if (i === 14) {
+    } else if (i === 15) {
       title = "지하철 광고 2";
       description = "서울역에서 스텔라이브 광고 배너를 찍은 사진입니다.";
-    } else if (i === 15) {
+    } else if (i === 16) {
       title = "애니메 티셔츠";
       description = "일본 현지에서 직접 구입한 옷을 입고 찍은 사진입니다.";
-    } else if (i === 16) {
+    } else if (i === 17) {
       title = "홀로라이브 등신대";
       description = "일본 현지에서 홀로라이브 EN 이나 등신대를 찍은 사진입니다.";
-    } else if (i === 17) {
+    } else if (i === 18) {
       title = "스텔라이브 팝업샵";
       description = "홍대 스텔라이브 팝업샵에 방문하여 입구에서 찍은 사진입니다.";
-    } else if (i === 18) {
+    } else if (i === 19) {
       title = "명조 콜라보";
       description = "일본에 방문했을 때 명조 콜라보 팝업에 다녀와서 찍은 사진입니다.";
-    } else if (i === 19) {
+    } else if (i === 20) {
       title = "일본 아키하바라 1";
       description = "아키하바라에 방문하여 굿즈 샵을 돌아다니며 찍은 사진입니다.";
-    } else if (i === 20) {
+    } else if (i === 21) {
       title = "일본 아키하바라 2";
       description = "아키하바라에 방문해서 봤던 광고를 찍은 사진입니다.";
-    } else if (i === 21) {
+    } else if (i === 22) {
       title = "일본 아키하바라 3";
       description = "아키하바라에 방문하여 블루 아카이브와 라멘집 콜라보를 기다리면서 찍은 사진입니다.";
-    } else if (i === 22) {
+    } else if (i === 23) {
       title = "일본 아키하바라 4";
       description = "아키하바라역에 바로 내리면 보이는 광고를 찍은 사진입니다. 리코리스 리코일 재밌습니다.";
-    } else if (i === 23) {
+    } else if (i === 24) {
       title = "지하철 광고 3";
       description = "홀로라이브 지하철 광고 배너를 찍은 사진입니다.";
-    } else if (i === 24) {
+    } else if (i === 25) {
       title = "우타이테 하나땅 내한";
       description = "제가 좋아하는 가수 하나땅의 첫 내한 때 방문하여 찍은 사진입니다.";
-    } else if (i === 25) {
+    } else if (i === 26) {
       title = "일본 아키하바라 5";
       description = "아키하바라역 블루 아카이브 광고를 찍은 사진입니다.";
-    } else if (i === 26) {
+    } else if (i === 27) {
       title = "인생 업적";
       description = "제가 그린 팬아트가 즐겨 보는 버츄얼 유튜버 방송 공지에 올라가서 찍은 사진입니다.";
-    } else if (i === 27) {
+    } else if (i === 28) {
       title = "AGF";
       description = "AGF 때 봇치 더 락 부스에서 찍은 사진입니다.";
-    } else if (i === 28) {
+    } else if (i === 29) {
       title = "2014년 인생 첫 지스타 방문";
       description = "처음으로 지스타를 방문해 신세계를 경험하며, 게임 개발을 향한 애정이 깊어졌습니다.";
-    } else if (i === 29) {
+    } else if (i === 30) {
       title = "블루 아카이브 온리전 3";
       description = "블루 아카이브 2.5주년 온리전 때 찍은 사진입니다.";
-    } else if (i === 30) {
+    } else if (i === 31) {
       title = "일본 성지순례";
       description = "일본에 직접 방문하여 봇치 더 락 성지순례를 하며 찍은 사진입니다.";
-    } else if (i === 31) {
+    } else if (i === 32) {
       title = "붕괴 스타레일 콜라보";
       description = "강남역 붕괴 스타레일과 갤럭시 스마트폰 콜라보 때 찍은 사진입니다.";
-    } else if (i === 32) {
+    } else if (i === 33) {
       title = "명조 2주년 페스티벌 행사";
       description = "친구의 2차 창작부스 도우미로 참여했습니다.";
-    } else if (i === 33) {
+    } else if (i === 34) {
       title = "블루 아카이브 온리전 4";
       description = "블루 아카이브 2.5주년 온리전 때 찍은 사진입니다.";
-    } else if (i === 34) {
+    } else if (i === 35) {
       title = "일본 아키하바라 6";
       description = "아키하바라에 방문하여 굿즈 샵을 돌아다니며 찍은 사진입니다.";
-    } else if (i === 35) {
+    } else if (i === 36) {
       title = "명조 2주년 페스티벌 행사";
       description = "치사탈과 같이 찍은 사진입니다.";
     } else if (i === 42) {
