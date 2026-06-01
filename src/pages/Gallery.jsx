@@ -3,7 +3,13 @@ import Header from '../components/Header';
 import { motion, AnimatePresence } from 'framer-motion';
 
 const Gallery = () => {
-  const [activeTab, setActiveTab] = useState('illustration'); // 'gallery' | 'illustration' | 'fanart'
+  const [activeTab, setActiveTab] = useState(() => {
+    return sessionStorage.getItem('galleryActiveTab') || 'illustration';
+  }); // 'gallery' | 'illustration' | 'fanart'
+  
+  useEffect(() => {
+    sessionStorage.setItem('galleryActiveTab', activeTab);
+  }, [activeTab]);
   const [selectedImage, setSelectedImage] = useState(null);
   const [selectedFanartIndex, setSelectedFanartIndex] = useState(0);
 
