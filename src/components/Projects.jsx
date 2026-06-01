@@ -203,7 +203,8 @@ const Projects = () => {
                   gap: 'var(--spacing-sm)', 
                   marginBottom: 'var(--spacing-lg)',
                   color: 'var(--colors-ink-muted)',
-                  fontSize: '14px'
+                  fontSize: '14px',
+                  fontWeight: 400
                 }}>
                   {project.bullets.map((bullet, idx) => (
                     <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
