@@ -128,7 +128,7 @@ const Gallery = () => {
       description = "일본 현지에서 홀로라이브 EN 이나 등신대를 찍은 사진입니다.";
     } else if (i === 19) {
       title = "슬픈 사진";
-      description = "제 아내 리오를 데리고 오는 과정에서 사고가 난 사진을 기록했습니다.";
+      description = "제 아내 리오를 데리러 가는 과정에서 사고가 난 사진을 기록했습니다.";
     } else if (i === 20) {
       title = "명조 콜라보";
       description = "일본에 방문했을 때 명조 콜라보 팝업에 다녀와서 찍은 사진입니다.";
@@ -143,7 +143,7 @@ const Gallery = () => {
       description = "아키하바라에 방문하여 블루 아카이브와 라멘집 콜라보를 기다리면서 찍은 사진입니다.";
     } else if (i === 24) {
       title = "일본 아키하바라 4";
-      description = "아키하바라역에 바로 내리면 보이는 광고를 찍은 사진입니다. 리코리스 리코일 재밌습니다.";
+      description = "아키하바라역에서 바로 내리면 보이는 광고를 찍은 사진입니다. 리코리스 리코일 재밌습니다.";
     } else if (i === 25) {
       title = "지하철 광고 3";
       description = "홀로라이브 지하철 광고 배너를 찍은 사진입니다.";
@@ -155,7 +155,7 @@ const Gallery = () => {
       description = "아키하바라역 블루 아카이브 광고를 찍은 사진입니다.";
     } else if (i === 28) {
       title = "인생 업적";
-      description = "제가 그린 팬아트가 즐겨 보는 버츄얼 유튜버 방송 공지에 올라가서 찍은 사진입니다.";
+      description = "제가 그린 팬아트가 즐겨 보는 버추얼 유튜버 방송 공지에 올라가서 찍은 사진입니다.";
     } else if (i === 29) {
       title = "AGF";
       description = "AGF 때 봇치 더 락 부스에서 찍은 사진입니다.";
@@ -173,7 +173,7 @@ const Gallery = () => {
       description = "강남역 붕괴 스타레일과 갤럭시 스마트폰 콜라보 때 찍은 사진입니다.";
     } else if (i === 34) {
       title = "명조 2주년 페스티벌 행사 1";
-      description = "친구의 2차 창작부스 도우미로 참여했습니다.";
+      description = "친구의 2차 창작 부스 도우미로 참여했습니다.";
     } else if (i === 35) {
       title = "블루 아카이브 온리전 4";
       description = "블루 아카이브 2.5주년 온리전 때 찍은 사진입니다.";
