@@ -82,10 +82,10 @@ const Gallery = () => {
       description = "지스타 G-CON에서 강연을 들은 후 찍은 사진입니다.";
     } else if (i === 4) {
       title = "김형태 대표님과 찍은 사진";
-      description = "니케 출시 하기 전 오프라인 행사때 사인회에서 인사드리고 찍은 사진입니다.";
+      description = "니케 출시 전 오프라인 행사 때 사인회에서 인사드리고 찍은 사진입니다.";
     } else if (i === 5) {
       title = "금강선님의 강연";
-      description = "G-CON 2023때 로스트아크 12년간의 개발 비화 강연을 들으면서 찍은 사진입니다.";
+      description = "G-CON 2023 때 로스트아크 12년 개발 비화 강연을 들으며 찍은 사진입니다.";
     } else if (i === 6) {
       title = "블루 아카이브 온리전 1";
       description = "블루 아카이브 4주년 온리전 때 찍었던 사진입니다.";
@@ -97,7 +97,7 @@ const Gallery = () => {
       description = "호요랜드에 방문하여 찍은 폼폼 인형탈입니다.";
     } else if (i === 9) {
       title = "블루 아카이브 콜라보 카페";
-      description = "용산 도파민 존에서 콜라보 카페를 방문했을 때 찍은 사진입니다.";
+      description = "용산 도파민 존의 콜라보 카페에 방문했을 때 찍은 사진입니다.";
     } else if (i === 10) {
       title = "스텔라이브 콜라보 카페 1";
       description = "애니플러스 스텔라이브 클리셰 콜라보 카페에 방문하여 찍은 사진입니다.";
@@ -108,7 +108,7 @@ const Gallery = () => {
       title = "2026년 플레이 엑스포";
       description = "2026년 플레이 엑스포를 다녀와서 찍은 사진입니다. 일러스타 페스도 함께 방문했습니다.";
     } else if (i === 13) {
-      title = "일러스타 패스";
+      title = "일러스타 페스";
       description = "2026년 5월에 방문한 일러스타 페스에서 구매한 굿즈 사진입니다.";
     } else if (i === 14) {
       title = "지하철 광고 2";
@@ -121,10 +121,37 @@ const Gallery = () => {
       description = "일본 현지에서 홀로라이브 EN 이나 등신대를 찍은 사진입니다.";
     } else if (i === 17) {
       title = "스텔라이브 팝업샵";
-      description = "홍대 스텔라이브 팝업샵을 방문하여 입구에서 찍은 사진입니다.";
+      description = "홍대 스텔라이브 팝업샵에 방문하여 입구에서 찍은 사진입니다.";
+    } else if (i === 18) {
+      title = "명조 콜라보";
+      description = "일본에 방문했을 때 명조 콜라보 팝업에 다녀와서 찍은 사진입니다.";
+    } else if (i === 19) {
+      title = "일본 아키하바라 1";
+      description = "아키하바라에 방문하여 굿즈 샵을 돌아다니며 찍은 사진입니다.";
+    } else if (i === 20) {
+      title = "일본 아키하바라 2";
+      description = "아키하바라에 방문해서 봤던 광고를 찍은 사진입니다.";
+    } else if (i === 21) {
+      title = "일본 아키하바라 3";
+      description = "아키하바라에 방문하여 블루 아카이브와 라멘집 콜라보를 기다리면서 찍은 사진입니다.";
+    } else if (i === 22) {
+      title = "일본 아키하바라 4";
+      description = "아키하바라역에 바로 내리면 보이는 광고를 찍은 사진입니다. 리코리스 리코일 재밌습니다.";
+    } else if (i === 23) {
+      title = "지하철 광고 3";
+      description = "홀로라이브 지하철 광고 배너를 찍은 사진입니다.";
+    } else if (i === 24) {
+      title = "우타이테 하나땅 내한";
+      description = "제가 좋아하는 가수 하나땅의 첫 내한 때 방문하여 찍은 사진입니다.";
+    } else if (i === 25) {
+      title = "일본 아키하바라 5";
+      description = "아키하바라역 블루 아카이브 광고를 찍은 사진입니다.";
     } else if (i === 26) {
       title = "인생 업적";
-      description = "제가 그린 팬아트가 즐겨보는 버츄얼 유튜버 방송 공지에 올라가서 찍은 사진입니다.";
+      description = "제가 그린 팬아트가 즐겨 보는 버츄얼 유튜버 방송 공지에 올라가서 찍은 사진입니다.";
+    } else if (i === 27) {
+      title = "AGF";
+      description = "AGF 때 봇치 더 락 부스에서 찍은 사진입니다.";
     } else if (i === 28) {
       title = "2014년 인생 첫 지스타 방문";
       description = "처음으로 지스타를 방문해 신세계를 경험하며, 게임 개발을 향한 애정이 깊어졌습니다.";
@@ -134,17 +161,26 @@ const Gallery = () => {
     } else if (i === 30) {
       title = "일본 성지순례";
       description = "일본에 직접 방문하여 봇치 더 락 성지순례를 하며 찍은 사진입니다.";
+    } else if (i === 31) {
+      title = "붕괴 스타레일 콜라보";
+      description = "강남역 붕괴 스타레일과 갤럭시 스마트폰 콜라보 때 찍은 사진입니다.";
+    } else if (i === 33) {
+      title = "블루 아카이브 온리전 4";
+      description = "블루 아카이브 2.5주년 온리전 때 찍은 사진입니다.";
+    } else if (i === 34) {
+      title = "일본 아키하바라 6";
+      description = "아키하바라에 방문하여 굿즈 샵을 돌아다니며 찍은 사진입니다.";
     } else if (i === 35) {
       title = "명조 2주년 페스티벌 행사";
       description = "치사탈과 같이 찍은 사진입니다.";
     } else if (i === 42) {
       title = "용산 아이파크 도파민 존";
-      description = "용산 아이파크 방문했을 때 찍었던 사진입니다. 슈엔, 귀엽습니다.";
+      description = "용산 아이파크에 방문했을 때 찍은 사진입니다. 슈엔, 귀엽습니다.";
     } else if (i === 44) {
       title = "유형석 PD님의 강연";
-      description = "NDC 때 니케로 강연하실 때 찍은 사진입니다.";
+      description = "NDC에서 니케를 주제로 강연하실 때 찍은 사진입니다.";
     } else if (i === 46) {
-      title = "블루 아카이브 온리전 4";
+      title = "블루 아카이브 온리전 4 (중복)";
       description = "블루 아카이브 2.5주년 온리전 때 찍은 사진입니다.";
     } else if (i === 47) {
       title = "붕괴 스타레일 성우 사인";
@@ -192,7 +228,7 @@ const Gallery = () => {
           >
             <h1 className="text-display-md" style={{ marginBottom: 'var(--spacing-xs)' }}>갤러리</h1>
             <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-md)', wordBreak: 'keep-all' }}>
-              개인 일러스트, 서브컬쳐 활동, 그리고 아름다운 풍경 사진들을 기록해 둔 저만의 공간입니다.
+              개인 일러스트, 서브컬처 활동, 그리고 아름다운 풍경 사진들을 기록해 둔 저만의 공간입니다.
             </p>
 
             {/* Tab System */}
@@ -227,7 +263,7 @@ const Gallery = () => {
                   fontSize: '16px'
                 }}
               >
-                서브컬쳐
+                서브컬처
               </button>
               <button
                 onClick={() => setActiveTab('gallery')}

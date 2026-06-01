@@ -57,7 +57,7 @@ const Hero = () => {
           동선과 분위기로 이끌어, 오래 기억에 남는 플레이 경험을 만듭니다.
         </p>
         <p style={{ fontSize: '15px', fontWeight: 600, color: 'var(--colors-ink-subtle)' }}>
-          레벨디자이너 김용언
+          레벨 디자이너 김용언
         </p>
       </motion.div>
 

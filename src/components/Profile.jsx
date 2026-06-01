@@ -100,7 +100,7 @@ const Profile = () => {
                 안녕하세요.
               </p>
               <p className="text-body-md" style={{ color: 'var(--colors-ink)', fontWeight: 600, lineHeight: 1.7 }}>
-                플레이 경험과 아름다움이 공존하는 공간을 만드는 레벨디자이너 김용언입니다.
+                플레이 경험과 아름다움이 공존하는 공간을 만드는 레벨 디자이너 김용언입니다.
               </p>
             </div>
             
@@ -112,7 +112,7 @@ const Profile = () => {
 
             <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', fontWeight: 400, lineHeight: 1.7 }}>
               7년간 그림을 그리며 쌓아온 감각으로 공간의 인상을 더하고,<br />
-              레벨디자인의 언어로 플레이어의 움직임을 설계합니다.<br />
+              레벨 디자인의 언어로 플레이어의 움직임을 설계합니다.<br />
               플레이어가 길을 찾고, 장면을 기억하고, 그 세계에 머무르게 만드는 사람.
             </p>
 
