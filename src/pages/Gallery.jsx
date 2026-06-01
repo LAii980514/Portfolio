@@ -173,7 +173,7 @@ const Gallery = () => {
       title = "붕괴 스타레일 콜라보";
       description = "강남역 붕괴 스타레일과 갤럭시 스마트폰 콜라보 때 찍은 사진입니다.";
     } else if (i === 34) {
-      title = "명조 2주년 페스티벌 행사";
+      title = "명조 2주년 페스티벌 행사 1";
       description = "친구의 2차 창작부스 도우미로 참여했습니다.";
     } else if (i === 35) {
       title = "블루 아카이브 온리전 4";
@@ -182,13 +182,13 @@ const Gallery = () => {
       title = "일본 아키하바라 6";
       description = "아키하바라에 방문하여 굿즈 샵을 돌아다니며 찍은 사진입니다.";
     } else if (i === 37) {
-      title = "명조 2주년 페스티벌 행사";
+      title = "명조 2주년 페스티벌 행사 2";
       description = "치사탈과 같이 찍은 사진입니다.";
     } else if (i === 38) {
       title = "일본 아키하바라 7";
       description = "아키하바라에 방문하여 굿즈 샵을 돌아다니며 찍은 사진입니다.";
     } else if (i === 39) {
-      title = "명조 2주년 페스티벌 행사";
+      title = "명조 2주년 페스티벌 행사 3";
       description = "명조 2주년 페스티벌을 방문하여 찍은 사진입니다.";
     } else if (i === 40) {
       title = "스텔라이브의 첫 단독 콘서트.";
