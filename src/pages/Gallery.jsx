@@ -65,7 +65,7 @@ const Gallery = () => {
     "KakaoTalk_20260527_225601214_08.jpg", "KakaoTalk_20260527_225601214_09.jpg", "KakaoTalk_20260527_225601214_10.jpg",
     "KakaoTalk_20260527_225601214_11.jpg", "KakaoTalk_20260527_225601214_03.jpg", "KakaoTalk_20260527_225601214_01.jpg",
     "KakaoTalk_20260527_225601214.jpg", "KakaoTalk_20260527_225601214_16.jpg", "KakaoTalk_20260527_225601214_17.jpg",
-    "KakaoTalk_20260527_225601214_18.jpg", "sad_rio.jpg", "KakaoTalk_20260527_225601214_20.jpg",
+    "KakaoTalk_20260527_225601214_18.jpg", "KakaoTalk_20260527_225601214_04.jpg", "KakaoTalk_20260527_225601214_20.jpg",
     "KakaoTalk_20260527_225601214_21.jpg", "KakaoTalk_20260527_225601214_22.jpg", "KakaoTalk_20260527_225601214_23.jpg",
     "KakaoTalk_20260527_225601214_24.jpg", "KakaoTalk_20260527_225601214_05.jpg", "hanatan_banner.jpg",
     "KakaoTalk_20260527_225601214_27.jpg", "KakaoTalk_20260527_225601214_28.jpg", "KakaoTalk_20260527_225606799.jpg",
@@ -124,8 +124,8 @@ const Gallery = () => {
       title = "애니메 티셔츠";
       description = "일본 현지에서 직접 구입한 옷을 입고 찍은 사진입니다.";
     } else if (i === 18) {
-      title = "슬픈 사진";
-      description = "제 아내 리오를 데리고 오는 과정에서 사고가 난 사진을 기록했습니다.";
+      title = "홀로라이브 등신대";
+      description = "일본 현지에서 홀로라이브 EN 이나 등신대를 찍은 사진입니다.";
     } else if (i === 19) {
       title = "스텔라이브 팝업샵";
       description = "홍대 스텔라이브 팝업샵에 방문하여 입구에서 찍은 사진입니다.";
