@@ -44,7 +44,7 @@ const SkillCircle = ({ name, percentage, iconId, iconText, iconImage, iconColor 
           )}
         </div>
       </div>
-      <span className="text-caption" style={{ fontWeight: 600 }}>{name}</span>
+      <span className="text-caption" style={{ fontWeight: 600, fontFamily: "'S-Core Dream', sans-serif" }}>{name}</span>
     </div>
   );
 };
