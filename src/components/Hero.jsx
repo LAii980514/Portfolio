@@ -53,7 +53,7 @@ const Hero = () => {
         transition={{ duration: 0.8, delay: 0.8, ease: "easeOut" }}
         style={{ position: 'absolute', bottom: 'var(--spacing-section)', right: 'var(--spacing-xl)', textAlign: 'left', maxWidth: '600px' }}
       >
-        <p style={{ fontSize: '18px', lineHeight: '1.6', fontWeight: 500, color: 'var(--colors-ink-muted)', marginBottom: '8px', wordBreak: 'keep-all' }}>
+        <p style={{ fontSize: '18px', lineHeight: '1.6', fontWeight: 500, color: 'var(--colors-ink-muted)', marginBottom: '8px', wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>
           동선과 분위기로 이끌어, 오래 기억에 남는 플레이 경험을 만듭니다.
         </p>
         <p style={{ fontSize: '15px', fontWeight: 600, color: 'var(--colors-ink-subtle)' }}>

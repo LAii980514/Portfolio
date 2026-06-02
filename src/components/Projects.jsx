@@ -204,7 +204,8 @@ const Projects = () => {
                   marginBottom: 'var(--spacing-lg)',
                   color: 'var(--colors-ink-muted)',
                   fontSize: '14px',
-                  fontWeight: 400
+                  fontWeight: 400,
+                  fontFamily: "'S-Core Dream', sans-serif"
                 }}>
                   {project.bullets.map((bullet, idx) => (
                     <li key={idx} style={{ display: 'flex', alignItems: 'flex-start', gap: '8px' }}>
