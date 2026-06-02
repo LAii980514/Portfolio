@@ -92,31 +92,31 @@ const Profile = () => {
           style={{ flex: '1 1 500px', display: 'flex', flexDirection: 'column', justifyContent: 'flex-start' }}
         >
           <h2 className="text-eyebrow" style={{ marginBottom: 'var(--spacing-xs)' }}>PROFILE</h2>
-          <h3 className="text-display-md" style={{ marginBottom: 'var(--spacing-md)', marginLeft: '-4px' }}>김용언</h3>
+          <h3 className="text-display-md" style={{ marginBottom: 'var(--spacing-md)', marginLeft: '-4px', fontFamily: "'S-Core Dream', sans-serif", fontWeight: 700 }}>김용언</h3>
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxWidth: '620px', wordBreak: 'keep-all' }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <p className="text-body-md" style={{ color: 'var(--colors-ink)', fontWeight: 600, lineHeight: 1.7 }}>
+              <p className="text-body-md" style={{ color: 'var(--colors-ink)', fontWeight: 500, lineHeight: 1.7, fontFamily: "'S-Core Dream', sans-serif" }}>
                 안녕하세요.
               </p>
-              <p className="text-body-md" style={{ color: 'var(--colors-ink)', fontWeight: 600, lineHeight: 1.7 }}>
+              <p className="text-body-md" style={{ color: 'var(--colors-ink)', fontWeight: 500, lineHeight: 1.7, fontFamily: "'S-Core Dream', sans-serif" }}>
                 플레이 경험과 아름다움이 공존하는 공간을 만드는 레벨 디자이너 김용언입니다.
               </p>
             </div>
             
-            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', fontWeight: 400, lineHeight: 1.7, fontFamily: "'S-Core Dream', sans-serif" }}>
+            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', fontWeight: 400, lineHeight: 1.2, fontFamily: "'S-Core Dream', sans-serif" }}>
               저는 좋은 레벨이 플레이와 배경의 균형에서 완성된다고 생각합니다.<br />
               길을 직관적으로 읽게 만드는 동선, 그 공간에 머물고 싶게 만드는 분위기.<br />
               이 두 가지가 함께할 때 공간은 단순한 배경이 아니라 플레이어가 기억하는 세계가 됩니다.
             </p>
 
-            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', fontWeight: 400, lineHeight: 1.7, fontFamily: "'S-Core Dream', sans-serif" }}>
+            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', fontWeight: 400, lineHeight: 1.2, fontFamily: "'S-Core Dream', sans-serif" }}>
               7년간 그림을 그리며 쌓아온 감각으로 공간의 인상을 더하고,<br />
               레벨 디자인의 언어로 플레이어의 움직임을 설계합니다.<br />
               플레이어가 길을 찾고, 장면을 기억하고, 그 세계에 머무르게 만드는 사람.
             </p>
 
-            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', fontWeight: 400, lineHeight: 1.7, fontFamily: "'S-Core Dream', sans-serif" }}>
+            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', fontWeight: 400, lineHeight: 1.2, fontFamily: "'S-Core Dream', sans-serif" }}>
               저는 그런 경험을 안내하는 인도자가 되고 싶습니다.
             </p>
           </div>
