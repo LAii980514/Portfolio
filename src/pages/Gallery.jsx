@@ -4,7 +4,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 const Gallery = () => {
   const [activeTab, setActiveTab] = useState(() => {
-    return sessionStorage.getItem('galleryActiveTab') || 'illustration';
+    return sessionStorage.getItem('galleryActiveTab') || 'gallery';
   }); // 'gallery' | 'illustration' | 'fanart'
   
   useEffect(() => {
@@ -254,12 +254,28 @@ const Gallery = () => {
             style={{ marginBottom: 'var(--spacing-xl)' }}
           >
             <h1 className="text-display-md" style={{ marginBottom: 'var(--spacing-xs)' }}>갤러리</h1>
-            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-md)', wordBreak: 'keep-all' }}>
-              개인 일러스트, 서브컬처 활동, 그리고 아름다운 풍경 사진들을 기록해 둔 공간입니다.
+            <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-md)', wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>
+              아름다운 풍경 사진과 개인 일러스트, 그리고 서브컬처 활동을 기록해 둔 공간입니다.
             </p>
 
             {/* Tab System */}
             <div style={{ display: 'flex', gap: 'var(--spacing-sm)', alignItems: 'center' }}>
+              <button
+                onClick={() => setActiveTab('gallery')}
+                style={{
+                  background: activeTab === 'gallery' ? 'var(--colors-ink)' : 'transparent',
+                  color: activeTab === 'gallery' ? 'var(--colors-canvas)' : 'var(--colors-ink-subtle)',
+                  border: 'none',
+                  borderRadius: 'var(--rounded-pill)',
+                  padding: '6px 16px',
+                  cursor: 'pointer',
+                  fontWeight: 700,
+                  transition: 'all 0.2s',
+                  fontSize: '16px'
+                }}
+              >
+                풍경 사진
+              </button>
               <button
                 onClick={() => setActiveTab('illustration')}
                 style={{
@@ -291,22 +307,6 @@ const Gallery = () => {
                 }}
               >
                 서브컬처
-              </button>
-              <button
-                onClick={() => setActiveTab('gallery')}
-                style={{
-                  background: activeTab === 'gallery' ? 'var(--colors-ink)' : 'transparent',
-                  color: activeTab === 'gallery' ? 'var(--colors-canvas)' : 'var(--colors-ink-subtle)',
-                  border: 'none',
-                  borderRadius: 'var(--rounded-pill)',
-                  padding: '6px 16px',
-                  cursor: 'pointer',
-                  fontWeight: 700,
-                  transition: 'all 0.2s',
-                  fontSize: '16px'
-                }}
-              >
-                풍경 사진
               </button>
             </div>
           </motion.div>
