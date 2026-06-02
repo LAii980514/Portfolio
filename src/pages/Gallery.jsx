@@ -590,7 +590,7 @@ const Gallery = () => {
                             No. {selectedFanartIndex + 1}
                           </span>
                         </div>
-                        <p style={{ color: 'var(--colors-ink-muted)', fontSize: '13px', lineHeight: 1.5, margin: 0, wordBreak: 'keep-all' }}>
+                        <p style={{ color: 'var(--colors-ink-muted)', fontSize: '13px', lineHeight: 1.6, margin: 0, wordBreak: 'keep-all' }}>
                           {fanarts[selectedFanartIndex].description}
                         </p>
                       </div>

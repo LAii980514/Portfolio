@@ -96,10 +96,10 @@ const Profile = () => {
           
           <div style={{ display: 'flex', flexDirection: 'column', gap: '20px', maxWidth: '620px', wordBreak: 'keep-all' }}>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '8px' }}>
-              <p className="text-body-md" style={{ color: 'var(--colors-ink)', fontWeight: 500, lineHeight: 1.7, fontFamily: "'S-Core Dream', sans-serif" }}>
+              <p className="text-body-md" style={{ color: 'var(--colors-ink)', fontWeight: 500, lineHeight: 1.6, fontFamily: "'S-Core Dream', sans-serif" }}>
                 안녕하세요.
               </p>
-              <p className="text-body-md" style={{ color: 'var(--colors-ink)', fontWeight: 500, lineHeight: 1.7, fontFamily: "'S-Core Dream', sans-serif" }}>
+              <p className="text-body-md" style={{ color: 'var(--colors-ink)', fontWeight: 500, lineHeight: 1.6, fontFamily: "'S-Core Dream', sans-serif" }}>
                 플레이 경험과 아름다움이 공존하는 공간을 만드는 레벨 디자이너 김용언입니다.
               </p>
             </div>
