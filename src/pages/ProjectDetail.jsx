@@ -218,7 +218,7 @@ const ProjectDetail = () => {
         {project.screenshots && project.screenshots.length > 0 && (
           <section className="container" style={{ padding: '0 var(--spacing-xl)', marginBottom: 'var(--spacing-xxl)', display: 'flex', justifyContent: 'center' }}>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant} style={{ width: '100%', maxWidth: '1100px' }}>
-              <h2 className="text-display-sm" style={{ marginBottom: 'var(--spacing-lg)', color: '#ffffff', fontWeight: 800 }}>
+              <h2 className="text-display-sm" style={{ marginBottom: 'var(--spacing-lg)', color: '#ffffff', fontWeight: 800, textAlign: 'center' }}>
                 조감도
               </h2>
               
