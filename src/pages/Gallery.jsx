@@ -65,7 +65,7 @@ const Gallery = () => {
     "KakaoTalk_20260527_225601214_08.jpg", "KakaoTalk_20260527_225601214_09.jpg", "KakaoTalk_20260527_225601214_10.jpg",
     "KakaoTalk_20260527_225601214_11.jpg", "KakaoTalk_20260527_225601214_03.jpg", "KakaoTalk_20260527_225601214_01.jpg",
     "KakaoTalk_20260527_225601214.jpg", "KakaoTalk_20260527_225601214_16.jpg", "KakaoTalk_20260527_225601214_17.jpg",
-    "KakaoTalk_20260527_225601214_18.jpg", "sad_rio.jpg", "KakaoTalk_20260527_225601214_20.jpg",
+    "KakaoTalk_20260527_225601214_18.jpg", "image.jpg", "KakaoTalk_20260527_225601214_20.jpg",
     "KakaoTalk_20260527_225601214_21.jpg", "KakaoTalk_20260527_225601214_22.jpg", "KakaoTalk_20260527_225601214_23.jpg",
     "KakaoTalk_20260527_225601214_24.jpg", "KakaoTalk_20260527_225601214_05.jpg", "hanatan_banner.jpg",
     "KakaoTalk_20260527_225601214_27.jpg", "KakaoTalk_20260527_225601214_28.jpg", "KakaoTalk_20260527_225606799.jpg",
@@ -112,7 +112,7 @@ const Gallery = () => {
       title = "지하철 광고 1";
       description = "홀로라이브 지하철 광고 배너를 찍은 사진입니다.";
     } else if (i === 14) {
-      title = "2026년 플레이 엑스포";
+      title = "2026년 플레이 엑스포 1";
       description = "2026년 플레이 엑스포를 다녀와서 찍은 사진입니다. 일러스타 페스도 함께 방문했습니다.";
     } else if (i === 15) {
       title = "일러스타 페스";
@@ -127,8 +127,8 @@ const Gallery = () => {
       title = "홀로라이브 등신대";
       description = "일본 현지에서 홀로라이브 EN 이나 등신대를 찍은 사진입니다.";
     } else if (i === 19) {
-      title = "슬픈 사진";
-      description = "제 아내 리오를 데리러 가는 과정에서 사고가 난 사진을 기록했습니다.";
+      title = "2026년 플레이 엑스포 2";
+      description = "2026년 플레이 엑스포를 다녀와서 찍은 사진입니다.";
     } else if (i === 20) {
       title = "명조 콜라보";
       description = "일본에 방문했을 때 명조 콜라보 팝업에 다녀와서 찍은 사진입니다.";
