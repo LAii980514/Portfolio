@@ -285,7 +285,7 @@ const Projects = () => {
               flex: 1 
             }}>
               <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'var(--spacing-xs)' }}>
-                <h4 className="text-card-title" style={{ margin: 0 }}>{project.title}</h4>
+                <h4 className="text-card-title" style={{ margin: 0, fontFamily: "'S-Core Dream', sans-serif", fontWeight: 500 }}>{project.title}</h4>
                 <span style={{ 
                   fontSize: '11px', 
                   fontWeight: 700, 
@@ -298,7 +298,7 @@ const Projects = () => {
                   {project.year}
                 </span>
               </div>
-              <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-md)', flex: 1, lineHeight: 1.5, wordBreak: 'keep-all' }}>
+              <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-md)', flex: 1, lineHeight: 1.5, wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>
                 {project.description}
               </p>
               
