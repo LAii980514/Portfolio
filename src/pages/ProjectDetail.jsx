@@ -132,10 +132,10 @@ const ProjectDetail = () => {
                 {project.docLink && project.docLink !== '#' ? (
                   <>
                     <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '12px 16px', borderBottom: '1px solid var(--colors-hairline)', background: 'var(--colors-surface-2)' }}>
-                      <span className="text-body-sm" style={{ fontWeight: 600, display: 'flex', alignItems: 'center', gap: '8px' }}>
+                      <span className="text-body-sm" style={{ fontWeight: 500, display: 'flex', alignItems: 'center', gap: '8px', fontFamily: "'S-Core Dream', sans-serif" }}>
                         <FileText size={16} /> 기획서 미리보기
                       </span>
-                      <a href={project.docLink} target="_blank" rel="noopener noreferrer" className="button button-outline" style={{ gap: '6px', fontSize: '13px', padding: '6px 12px' }}>
+                      <a href={project.docLink} target="_blank" rel="noopener noreferrer" className="button button-outline" style={{ gap: '6px', fontSize: '13px', padding: '6px 12px', fontFamily: "'S-Core Dream', sans-serif", fontWeight: 400 }}>
                         기획서 보기 <ExternalLink size={14} />
                       </a>
                     </div>
@@ -198,14 +198,14 @@ const ProjectDetail = () => {
                 {project.coreExperience && (
                   <div style={{ paddingBottom: '12px' }}>
                     <div className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', fontWeight: 600, marginBottom: '8px' }}>핵심 경험</div>
-                    <div className="text-body-sm" style={{ fontWeight: 500, color: 'var(--colors-ink-subtle)', lineHeight: 1.6, wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>{project.coreExperience}</div>
+                    <div className="text-body-sm" style={{ fontWeight: 300, color: 'var(--colors-ink-subtle)', lineHeight: 1.6, wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>{project.coreExperience}</div>
                   </div>
                 )}
 
                 {project.references && (
                   <div style={{ paddingBottom: '12px' }}>
                     <div className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', fontWeight: 600, marginBottom: '8px' }}>레퍼런스</div>
-                    <div className="text-body-sm" style={{ fontWeight: 500, color: 'var(--colors-ink-subtle)', lineHeight: 1.6, wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>{project.references}</div>
+                    <div className="text-body-sm" style={{ fontWeight: 300, color: 'var(--colors-ink-subtle)', lineHeight: 1.6, wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>{project.references}</div>
                   </div>
                 )}
                 

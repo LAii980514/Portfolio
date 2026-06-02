@@ -311,7 +311,7 @@ const Projects = () => {
                 marginTop: 'auto'
               }}>
                 <Link to={`/project/${project.id}`} style={{ textDecoration: 'none' }}>
-                  <button className="button button-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px' }}>
+                  <button className="button button-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', fontFamily: "'S-Core Dream', sans-serif", fontWeight: 400 }}>
                     기획서 보기 <ArrowRight size={16} />
                   </button>
                 </Link>
