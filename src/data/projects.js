@@ -37,7 +37,7 @@ export const mainProjects = [
     genre: "내러티브 액션 RPG",
     engine: "언리얼 엔진 5.5",
     mapSize: "37일",
-    role: "8분",
+    role: "9분",
     bullets: [
       "환경 기믹의 자연스러운 반복 학습과 테마별 응용 배치",
       "오브젝트 배치를 통한 직관적인 상황 암시 및 추리 요소 제공",
