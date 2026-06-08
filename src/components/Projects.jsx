@@ -162,9 +162,10 @@ const Projects = () => {
                     backgroundColor: 'var(--colors-surface-2)',
                     padding: '4px 12px',
                     borderRadius: 'var(--rounded-pill)',
-                    border: '1px solid var(--colors-hairline)'
+                    border: '1px solid var(--colors-hairline)',
+                    whiteSpace: 'nowrap'
                   }}>
-                    2026
+                    {project.date || "2026"}
                   </span>
                 </div>
                 

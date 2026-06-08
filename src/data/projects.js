@@ -2,6 +2,7 @@ export const mainProjects = [
   {
     id: 1,
     title: "빛에 잠긴 미술관",
+    date: "2026. 06",
     genre: "액션 어드벤처",
     engine: "언리얼 엔진 5.7",
     mapSize: "36일",
@@ -32,6 +33,7 @@ export const mainProjects = [
   {
     id: 2,
     title: "마법소녀의 기억 (폴리싱 중)",
+    date: "2026. 04",
     genre: "내러티브 액션 RPG",
     engine: "언리얼 엔진 5.5",
     mapSize: "37일",
