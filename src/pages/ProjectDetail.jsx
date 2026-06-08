@@ -214,26 +214,12 @@ const ProjectDetail = () => {
           </div>
         </section>
 
-        {/* Map Image Area (조감도) */}
-        {project.mapImage && (
-          <section className="container" style={{ padding: '0 var(--spacing-xl)', marginBottom: 'var(--spacing-xxl)', display: 'flex', justifyContent: 'center' }}>
-            <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant} style={{ width: '100%', maxWidth: '1100px' }}>
-              <h2 className="text-display-sm" style={{ marginBottom: 'var(--spacing-lg)', color: '#ffffff', fontWeight: 800, textAlign: 'center' }}>
-                조감도
-              </h2>
-              <div style={{ width: '100%', borderRadius: 'var(--rounded-xl)', overflow: 'hidden', backgroundColor: 'var(--colors-surface-2)', border: '1px solid var(--colors-hairline)' }}>
-                <img src={project.mapImage} alt={`${project.title} 조감도`} style={{ width: '100%', height: 'auto', display: 'block' }} />
-              </div>
-            </motion.div>
-          </section>
-        )}
-
-        {/* Screenshots Area - Only show if screenshots exist */}
+        {/* Map & Screenshots Area - Only show if screenshots exist */}
         {project.screenshots && project.screenshots.length > 0 && (
           <section className="container" style={{ padding: '0 var(--spacing-xl)', marginBottom: 'var(--spacing-xxl)', display: 'flex', justifyContent: 'center' }}>
             <motion.div initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUpVariant} style={{ width: '100%', maxWidth: '1100px' }}>
               <h2 className="text-display-sm" style={{ marginBottom: 'var(--spacing-lg)', color: '#ffffff', fontWeight: 800, textAlign: 'center' }}>
-                스크린샷
+                조감도
               </h2>
               
               <div style={{ position: 'relative', width: '100%', aspectRatio: '16/9', borderRadius: 'var(--rounded-xl)', overflow: 'hidden', backgroundColor: 'var(--colors-surface-2)', border: '1px solid var(--colors-hairline)' }}>
