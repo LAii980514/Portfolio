@@ -198,14 +198,14 @@ const ProjectDetail = () => {
                 {project.coreExperience && (
                   <div style={{ paddingBottom: '12px' }}>
                     <div className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', fontWeight: 600, marginBottom: '8px' }}>핵심 경험</div>
-                    <div className="text-body-sm" style={{ fontWeight: 300, color: 'var(--colors-ink-subtle)', lineHeight: 1.6, wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>{project.coreExperience}</div>
+                    <div className="text-body-sm" style={{ fontWeight: 400, color: 'var(--colors-ink-subtle)', lineHeight: 1.6, wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>{project.coreExperience}</div>
                   </div>
                 )}
 
                 {project.references && (
                   <div style={{ paddingBottom: '12px' }}>
                     <div className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', fontWeight: 600, marginBottom: '8px' }}>레퍼런스</div>
-                    <div className="text-body-sm" style={{ fontWeight: 300, color: 'var(--colors-ink-subtle)', lineHeight: 1.6, wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>{project.references}</div>
+                    <div className="text-body-sm" style={{ fontWeight: 400, color: 'var(--colors-ink-subtle)', lineHeight: 1.6, wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>{project.references}</div>
                   </div>
                 )}
                 
