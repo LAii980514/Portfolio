@@ -16,6 +16,7 @@ export const mainProjects = [
     alignImage: 'left',
     videoId: 'b3vxNhd6nbE',
     mainImage: '/project1_main_v2.jpg',
+    mapImage: '/project1_map.jpg',
     docLink: 'https://drive.google.com/file/d/1v3SBkcmJqZLWvF_-6My4pu5M1xRXbhh5/view?usp=sharing',
     coreExperience: '각 공간의 테마에 맞춰 서로 다른 플레이 경험을 배치해, 구간마다 색다른 재미로 레벨의 밀도를 높임.',
     references: '언차티드 4, 스텔라 블레이드, 툼레이더',
@@ -45,7 +46,7 @@ export const mainProjects = [
     ],
     tags: ["어반판타지", "일본", "창작 레벨", "마법소녀"],
     alignImage: 'left',
-    videoId: 'eioYulMp_5k',
+    videoId: 'vs88w-ChOnI',
     mainImage: '/project2_main.png',
     docLink: '#', // TODO: Add real Google Drive link
     coreExperience: '탁 트인 환경에서의 탐험과 거대 보스전의 내러티브 경험',
