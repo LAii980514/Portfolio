@@ -51,9 +51,12 @@ export const mainProjects = [
     coreExperience: '탁 트인 환경에서의 탐험과 거대 보스전의 내러티브 경험',
     references: '호라이즌 제로 던, 원신, 니어 오토마타',
     screenshots: [
-      '/project2_main.png',
-      '/project2_main.png',
-      '/project2_main.png'
+      '/T1.png',
+      '/T2.png',
+      '/T3.png',
+      '/T4.png',
+      '/T5.png',
+      '/T6.png'
     ]
   }
 ];
