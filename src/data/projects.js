@@ -49,7 +49,12 @@ export const mainProjects = [
     mainImage: '/project2_main.png',
     docLink: '#', // TODO: Add real Google Drive link
     coreExperience: '탁 트인 환경에서의 탐험과 거대 보스전의 내러티브 경험',
-    references: '호라이즌 제로 던, 원신, 니어 오토마타'
+    references: '호라이즌 제로 던, 원신, 니어 오토마타',
+    screenshots: [
+      '/project2_main.png',
+      '/project2_main.png',
+      '/project2_main.png'
+    ]
   }
 ];
 
