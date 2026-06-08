@@ -171,19 +171,19 @@ const Projects = () => {
                 }}>
                   <div>
                     <div className="text-caption" style={{ color: 'var(--colors-primary)', fontWeight: 600, marginBottom: '4px' }}>장르</div>
-                    <div className="text-body-sm" style={{ fontWeight: 600 }}>{project.genre}</div>
+                    <div className="text-body-sm" style={{ fontWeight: 400, fontFamily: "'S-Core Dream', sans-serif" }}>{project.genre}</div>
                   </div>
                   <div>
                     <div className="text-caption" style={{ color: 'var(--colors-primary)', fontWeight: 600, marginBottom: '4px' }}>엔진</div>
-                    <div className="text-body-sm" style={{ fontWeight: 600 }}>{project.engine}</div>
+                    <div className="text-body-sm" style={{ fontWeight: 400, fontFamily: "'S-Core Dream', sans-serif" }}>{project.engine}</div>
                   </div>
                   <div>
                     <div className="text-caption" style={{ color: 'var(--colors-primary)', fontWeight: 600, marginBottom: '4px' }}>작업기간</div>
-                    <div className="text-body-sm" style={{ fontWeight: 600 }}>{project.mapSize}</div>
+                    <div className="text-body-sm" style={{ fontWeight: 400, fontFamily: "'S-Core Dream', sans-serif" }}>{project.mapSize}</div>
                   </div>
                   <div>
                     <div className="text-caption" style={{ color: 'var(--colors-primary)', fontWeight: 600, marginBottom: '4px' }}>플레이 타임</div>
-                    <div className="text-body-sm" style={{ fontWeight: 600 }}>{project.role}</div>
+                    <div className="text-body-sm" style={{ fontWeight: 400, fontFamily: "'S-Core Dream', sans-serif" }}>{project.role}</div>
                   </div>
                 </div>
 

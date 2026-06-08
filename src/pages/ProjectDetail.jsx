@@ -63,7 +63,7 @@ const ProjectDetail = () => {
           <motion.p 
             initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 0.2 }}
             className="text-body-md" 
-            style={{ color: 'var(--colors-ink-muted)', fontWeight: 500 }}
+            style={{ color: 'var(--colors-ink-muted)', fontWeight: 400, fontFamily: "'S-Core Dream', sans-serif" }}
           >
             {project.genre}
           </motion.p>
