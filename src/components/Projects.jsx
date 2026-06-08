@@ -97,31 +97,21 @@ const Projects = () => {
                 overflow: 'hidden'
               }}>
                 {project.mainImage ? (
-                  project.id === 2 && import.meta.env.PROD ? (
-                    <div style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'block', cursor: 'not-allowed' }}>
-                      <img 
-                        src={project.mainImage} 
-                        alt={project.title} 
-                        style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }}
-                      />
-                    </div>
-                  ) : (
-                    <Link to={`/project/${project.id}`} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'block', cursor: 'pointer' }}>
-                      <img 
-                        src={project.mainImage} 
-                        alt={project.title} 
-                        style={{
-                          width: '100%',
-                          height: '100%',
-                          objectFit: 'cover',
-                          display: 'block',
-                          transition: 'transform 0.3s ease',
-                        }}
-                        onMouseOver={(e) => { e.currentTarget.style.transform = 'scale(1.05)'; }}
-                        onMouseOut={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
-                      />
-                    </Link>
-                  )
+                  <Link to={`/project/${project.id}`} style={{ position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', display: 'block', cursor: 'pointer' }}>
+                    <img 
+                      src={project.mainImage} 
+                      alt={project.title} 
+                      style={{
+                        width: '100%',
+                        height: '100%',
+                        objectFit: 'cover',
+                        display: 'block',
+                        transition: 'transform 0.3s ease',
+                      }}
+                      onMouseOver={(e) => { e.currentTarget.style.transform = 'scale(1.05)'; }}
+                      onMouseOut={(e) => { e.currentTarget.style.transform = 'scale(1)'; }}
+                    />
+                  </Link>
                 ) : project.videoId ? (
                   <iframe 
                     src={`https://www.youtube.com/embed/${project.videoId}?autoplay=1&mute=1&loop=1&playlist=${project.videoId}&controls=0&showinfo=0&rel=0&modestbranding=1`}
@@ -218,17 +208,11 @@ const Projects = () => {
 
                 {/* Buttons */}
                 <div style={{ display: 'flex', gap: '12px' }}>
-                  {project.id === 2 && import.meta.env.PROD ? (
-                    <button className="button button-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', opacity: 0.5, cursor: 'not-allowed' }} disabled>
-                      접근 불가 (폴리싱 중) <ArrowRight size={16} />
+                  <Link to={`/project/${project.id}`} style={{ textDecoration: 'none' }}>
+                    <button className="button button-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px' }}>
+                      자세히 보기 <ArrowRight size={16} />
                     </button>
-                  ) : (
-                    <Link to={`/project/${project.id}`} style={{ textDecoration: 'none' }}>
-                      <button className="button button-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px' }}>
-                        자세히 보기 <ArrowRight size={16} />
-                      </button>
-                    </Link>
-                  )}
+                  </Link>
                 </div>
 
               </div>
