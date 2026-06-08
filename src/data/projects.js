@@ -48,8 +48,8 @@ export const mainProjects = [
     videoId: 'vs88w-ChOnI',
     mainImage: '/project2_main.png',
     docLink: '#', // TODO: Add real Google Drive link
-    coreExperience: '탁 트인 환경에서의 탐험과 거대 보스전의 내러티브 경험',
-    references: '호라이즌 제로 던, 원신, 니어 오토마타',
+    coreExperience: '폐허가 된 도시를 가로지르며 흩어진 단서로 잃어버린 기억을 되찾아가는 선형 레벨',
+    references: '서브컬쳐, 마법소녀 미디어 컨텐츠',
     screenshots: [
       '/T1.png',
       '/T2.png',
