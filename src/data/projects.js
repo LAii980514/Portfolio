@@ -17,7 +17,7 @@ export const mainProjects = [
     videoId: 'b3vxNhd6nbE',
     mainImage: '/project1_main_v2.jpg',
     docLink: 'https://drive.google.com/file/d/1v3SBkcmJqZLWvF_-6My4pu5M1xRXbhh5/view?usp=sharing',
-    coreExperience: '각 공간의 테마에 맞춰 서로 다른 플레이 경험을 배치해, 구간마다 색다른 재미로 레벨의 밀도를 높임.',
+    coreExperience: '공간 테마에 따라 전투, 탐색, 잠입, 연출을 다르게 배치하여, 매 구간 새로운 플레이 경험을 느끼게 하는 선형 레벨',
     references: '언차티드 4, 스텔라 블레이드, 툼레이더',
     screenshots: [
       '/project1_screen1.jpg',
