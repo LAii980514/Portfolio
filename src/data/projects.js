@@ -16,7 +16,7 @@ export const mainProjects = [
     alignImage: 'left',
     videoId: 'b3vxNhd6nbE',
     mainImage: '/project1_main_v2.jpg',
-    docLink: 'https://drive.google.com/file/d/19LZHH2rqEZeWpieFxH_GTnlWMokPINox/view?usp=sharing',
+    docLink: 'https://drive.google.com/file/d/1fFa2RqUzh4bTH742za8jmJAmZO34qCNY/view?usp=sharing',
     coreExperience: '공간 테마에 따라 플레이 경험을 다르게 배치한 단조로움 없는 밀도 높은 선형 레벨',
     references: '언차티드 4, 스텔라 블레이드, 툼레이더',
     screenshots: [
@@ -47,7 +47,7 @@ export const mainProjects = [
     alignImage: 'left',
     videoId: 'vs88w-ChOnI',
     mainImage: '/project2_main.png',
-    docLink: '#', // TODO: Add real Google Drive link
+    docLink: 'https://drive.google.com/file/d/1ml0mRnU-aRWq8NDCIRnKkijH9jb0WNUB/view?usp=sharing',
     coreExperience: '폐허가 된 도시를 가로지르며 흩어진 단서로 잃어버린 기억을 되찾아가는 선형 레벨',
     references: '서브컬쳐, 마법소녀 미디어 컨텐츠',
     screenshots: [
