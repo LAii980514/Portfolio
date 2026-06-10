@@ -124,16 +124,75 @@ const Profile = () => {
         </motion.div>
       </div>
 
-      {/* SKILLS Section (Moved to full width for better layout balance) */}
+      {/* SKILLS & DOCUMENTS Section */}
       <motion.div 
         initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUpVariant}
         style={{ marginTop: 'var(--spacing-xl)', paddingTop: 'var(--spacing-md)', borderTop: '1px solid var(--colors-hairline)' }}
       >
-        <h2 className="text-eyebrow" style={{ marginBottom: 'var(--spacing-md)' }}>SKILLS & TOOLS</h2>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px' }}>
-          {skills.map(skill => (
-            <SkillCircle key={skill.name} name={skill.name} percentage={skill.percentage} iconId={skill.iconId} iconText={skill.iconText} iconImage={skill.iconImage} iconColor={skill.iconColor} />
-          ))}
+        <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', flexWrap: 'wrap', gap: 'var(--spacing-lg)' }}>
+          {/* Left: Skills */}
+          <div>
+            <h2 className="text-eyebrow" style={{ marginBottom: 'var(--spacing-md)' }}>SKILLS & TOOLS</h2>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: '24px' }}>
+              {skills.map(skill => (
+                <SkillCircle key={skill.name} name={skill.name} percentage={skill.percentage} iconId={skill.iconId} iconText={skill.iconText} iconImage={skill.iconImage} iconColor={skill.iconColor} />
+              ))}
+            </div>
+          </div>
+
+          {/* Right: Document Buttons */}
+          <div style={{ display: 'flex', gap: 'var(--spacing-md)', alignItems: 'center', flexWrap: 'wrap', paddingTop: '24px' }}>
+            <motion.button 
+              className="button" 
+              whileHover={{ scale: 1.06, boxShadow: '0 0 24px rgba(166, 148, 245, 0.5)' }} 
+              whileTap={{ scale: 0.96 }}
+              onClick={() => window.open('https://drive.google.com/file/d/1bn-R6kI0wQ7yMowHsuIwqn9uC0dkLlXw/view?usp=sharing', '_blank')}
+              style={{ 
+                padding: '14px 28px', 
+                fontSize: '15px', 
+                fontFamily: "'S-Core Dream', sans-serif", 
+                fontWeight: 600, 
+                borderRadius: 'var(--rounded-lg)', 
+                display: 'flex', 
+                alignItems: 'center', 
+                gap: '10px', 
+                transition: 'all 0.3s ease',
+                background: 'linear-gradient(135deg, rgba(166, 148, 245, 0.15) 0%, rgba(166, 148, 245, 0.05) 100%)',
+                border: '1px solid rgba(166, 148, 245, 0.4)',
+                color: 'var(--colors-ink)',
+                boxShadow: '0 0 12px rgba(166, 148, 245, 0.2)',
+                cursor: 'pointer'
+              }}
+            >
+              <img src="/public-relation_5360641.png" alt="PR Icon" style={{ width: '22px', height: '22px', objectFit: 'contain', filter: 'invert(1) opacity(0.9)' }} />
+              PR 문서
+            </motion.button>
+            <motion.button 
+              className="button" 
+              whileHover={{ scale: 1.06, boxShadow: '0 0 24px rgba(166, 148, 245, 0.5)' }} 
+              whileTap={{ scale: 0.96 }}
+              onClick={() => window.open('https://drive.google.com/file/d/1ftOrL19DueZTDvDe45MHP5gKguBzIzDX/view?usp=sharing', '_blank')}
+              style={{ 
+                padding: '14px 28px', 
+                fontSize: '15px', 
+                fontFamily: "'S-Core Dream', sans-serif", 
+                fontWeight: 600, 
+                borderRadius: 'var(--rounded-lg)', 
+                display: 'flex', 
+                alignItems: 'center', 
+                gap: '10px', 
+                transition: 'all 0.3s ease',
+                background: 'linear-gradient(135deg, rgba(166, 148, 245, 0.15) 0%, rgba(166, 148, 245, 0.05) 100%)',
+                border: '1px solid rgba(166, 148, 245, 0.4)',
+                color: 'var(--colors-ink)',
+                boxShadow: '0 0 12px rgba(166, 148, 245, 0.2)',
+                cursor: 'pointer'
+              }}
+            >
+              <img src="/free-icon-curriculum-vitae-1324850.png" alt="Resume Icon" style={{ width: '22px', height: '22px', objectFit: 'contain', filter: 'invert(1) opacity(0.9)' }} />
+              이력서
+            </motion.button>
+          </div>
         </div>
       </motion.div>
     </section>
