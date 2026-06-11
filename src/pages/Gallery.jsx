@@ -259,19 +259,20 @@ const Gallery = () => {
             </p>
 
             {/* Tab System */}
-            <div style={{ display: 'flex', gap: 'var(--spacing-sm)', alignItems: 'center' }}>
+            <div style={{ display: 'inline-flex', gap: '4px', alignItems: 'center', background: 'var(--colors-surface-2)', padding: '4px', borderRadius: 'var(--rounded-pill)', border: '1px solid var(--colors-hairline)' }}>
               <button
                 onClick={() => setActiveTab('gallery')}
                 style={{
                   background: activeTab === 'gallery' ? 'var(--colors-ink)' : 'transparent',
                   color: activeTab === 'gallery' ? 'var(--colors-canvas)' : 'var(--colors-ink-subtle)',
-                  border: 'none',
+                  border: activeTab === 'gallery' ? 'none' : '1px solid transparent',
                   borderRadius: 'var(--rounded-pill)',
-                  padding: '6px 16px',
+                  padding: '7px 18px',
                   cursor: 'pointer',
                   fontWeight: 700,
-                  transition: 'all 0.2s',
-                  fontSize: '16px'
+                  transition: 'all 0.25s ease',
+                  fontSize: '15px',
+                  boxShadow: activeTab === 'gallery' ? '0 2px 8px rgba(0,0,0,0.15)' : 'none'
                 }}
               >
                 풍경 사진
@@ -281,13 +282,14 @@ const Gallery = () => {
                 style={{
                   background: activeTab === 'illustration' ? 'var(--colors-ink)' : 'transparent',
                   color: activeTab === 'illustration' ? 'var(--colors-canvas)' : 'var(--colors-ink-subtle)',
-                  border: 'none',
+                  border: activeTab === 'illustration' ? 'none' : '1px solid transparent',
                   borderRadius: 'var(--rounded-pill)',
-                  padding: '6px 16px',
+                  padding: '7px 18px',
                   cursor: 'pointer',
                   fontWeight: 700,
-                  transition: 'all 0.2s',
-                  fontSize: '16px'
+                  transition: 'all 0.25s ease',
+                  fontSize: '15px',
+                  boxShadow: activeTab === 'illustration' ? '0 2px 8px rgba(0,0,0,0.15)' : 'none'
                 }}
               >
                 일러스트 개인작
@@ -297,13 +299,14 @@ const Gallery = () => {
                 style={{
                   background: activeTab === 'fanart' ? 'var(--colors-ink)' : 'transparent',
                   color: activeTab === 'fanart' ? 'var(--colors-canvas)' : 'var(--colors-ink-subtle)',
-                  border: 'none',
+                  border: activeTab === 'fanart' ? 'none' : '1px solid transparent',
                   borderRadius: 'var(--rounded-pill)',
-                  padding: '6px 16px',
+                  padding: '7px 18px',
                   cursor: 'pointer',
                   fontWeight: 700,
-                  transition: 'all 0.2s',
-                  fontSize: '16px'
+                  transition: 'all 0.25s ease',
+                  fontSize: '15px',
+                  boxShadow: activeTab === 'fanart' ? '0 2px 8px rgba(0,0,0,0.15)' : 'none'
                 }}
               >
                 서브컬처
