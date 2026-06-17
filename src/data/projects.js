@@ -49,7 +49,7 @@ export const mainProjects = [
     mainImage: '/project2_main.png',
     docLink: 'https://drive.google.com/file/d/1ml0mRnU-aRWq8NDCIRnKkijH9jb0WNUB/view?usp=sharing',
     coreExperience: '폐허가 된 도시를 가로지르며 흩어진 단서로 잃어버린 기억을 되찾아가는 선형 레벨',
-    references: '서브컬쳐, 마법소녀 미디어 컨텐츠',
+    references: '사일런트 힐 f, 서브컬쳐, 마법소녀 미디어 컨텐츠',
     screenshots: [
       '/T1.png',
       '/T2.png',
