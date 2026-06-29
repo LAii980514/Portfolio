@@ -87,7 +87,7 @@ export const otherProjects = [
     mapSize: '14일',
     role: '예상플레이 25분~30분',
     coreExperience: '상황에 따른 파티 분할과 오브젝트 투척 등 유기적인 협력을 요구하는 레이드 전투 경험',
-    docLink: 'https://drive.google.com/file/d/1umWh1d0lOURR2XlLuweqJuOeoiCQeyUP/view?usp=sharing',
+    docLink: 'https://drive.google.com/file/d/1nqYPtdDVknOSQ2B1fcMyh5hwftVDY1Zy/view?usp=sharing',
     videoId: 'sH5tL1whafg'
   },
   {
