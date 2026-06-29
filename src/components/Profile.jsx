@@ -171,7 +171,7 @@ const Profile = () => {
               className="button" 
               whileHover={{ scale: 1.06, boxShadow: '0 0 24px rgba(166, 148, 245, 0.5)' }} 
               whileTap={{ scale: 0.96 }}
-              onClick={() => window.open('https://drive.google.com/file/d/1ftOrL19DueZTDvDe45MHP5gKguBzIzDX/view?usp=sharing', '_blank')}
+              onClick={() => window.open('https://drive.google.com/drive/folders/1I-j_OgBLtmxGHkw4P_em9MPRP_c_LbeO?hl=ko', '_blank')}
               style={{ 
                 padding: '14px 28px', 
                 fontSize: '15px', 
