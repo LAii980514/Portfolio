@@ -101,7 +101,7 @@ export const otherProjects = [
     mapSize: '14일',
     role: '4분',
     coreExperience: '내부와 외부를 교차하며 점진적으로 상승하는 난도와 전투 패턴을 학습하는 경험',
-    docLink: 'https://drive.google.com/drive/folders/1I-j_OgBLtmxGHkw4P_em9MPRP_c_LbeO?hl=ko',
+    docLink: 'https://drive.google.com/file/d/1c0ivfKDarT9erq-aBwFZtqyxUciG40U7/view?usp=sharing',
     videoId: 'NqPXfOUyDkQ'
   }
 ];
