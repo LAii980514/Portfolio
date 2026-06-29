@@ -16,7 +16,7 @@ export const mainProjects = [
     alignImage: 'left',
     videoId: 'b3vxNhd6nbE',
     mainImage: '/project1_main_v2.jpg',
-    docLink: 'https://drive.google.com/file/d/1fFa2RqUzh4bTH742za8jmJAmZO34qCNY/view?usp=sharing',
+    docLink: 'https://drive.google.com/file/d/1QF-AN3V6uoRKzU2Aoh_vo-yPIi-WQX7d/view?usp=sharing',
     coreExperience: '공간 테마에 따라 플레이 경험을 다르게 배치한 단조로움 없는 밀도 높은 선형 레벨',
     references: '언차티드 4, 스텔라 블레이드, 툼레이더',
     screenshots: [
@@ -47,7 +47,7 @@ export const mainProjects = [
     alignImage: 'left',
     videoId: 'vs88w-ChOnI',
     mainImage: '/project2_main.png',
-    docLink: 'https://drive.google.com/file/d/1ml0mRnU-aRWq8NDCIRnKkijH9jb0WNUB/view?usp=sharing',
+    docLink: 'https://drive.google.com/file/d/1LAUrfpWOhiv6i6PtEmtPyflum5XksCL-/view?usp=sharing',
     coreExperience: '폐허가 된 도시를 가로지르며 흩어진 단서로 잃어버린 기억을 되찾아가는 선형 레벨',
     references: '사일런트 힐 f, 서브컬쳐, 마법소녀 미디어 컨텐츠',
     screenshots: [
@@ -73,7 +73,7 @@ export const otherProjects = [
     mapSize: '45일',
     role: '12분',
     coreExperience: '명확한 랜드마크와 시각적 유도를 통한 자유도 높은 오픈월드 탐험 경험',
-    docLink: 'https://drive.google.com/file/d/1DmuTaflTyD5ehoVilrYIn54dy7hasonz/view?usp=sharing',
+    docLink: 'https://drive.google.com/file/d/1umWh1d0lOURR2XlLuweqJuOeoiCQeyUP/view?usp=sharing',
     videoId: 'GLXku7q29JQ'
   },
   {
@@ -87,7 +87,7 @@ export const otherProjects = [
     mapSize: '14일',
     role: '예상플레이 25분~30분',
     coreExperience: '상황에 따른 파티 분할과 오브젝트 투척 등 유기적인 협력을 요구하는 레이드 전투 경험',
-    docLink: 'https://drive.google.com/file/d/1S6QoFr6Ce1Gl2yVJcnqcRNaZhmoS5Oeb/view?usp=sharing',
+    docLink: 'https://drive.google.com/file/d/1umWh1d0lOURR2XlLuweqJuOeoiCQeyUP/view?usp=sharing',
     videoId: 'sH5tL1whafg'
   },
   {
@@ -101,7 +101,7 @@ export const otherProjects = [
     mapSize: '14일',
     role: '4분',
     coreExperience: '내부와 외부를 교차하며 점진적으로 상승하는 난도와 전투 패턴을 학습하는 경험',
-    docLink: 'https://drive.google.com/file/d/1Rmr9RPlbrdRC5Rb8YEfyY7BLYIT4aJzx/view?usp=sharing',
+    docLink: 'https://drive.google.com/drive/folders/1I-j_OgBLtmxGHkw4P_em9MPRP_c_LbeO?hl=ko',
     videoId: 'NqPXfOUyDkQ'
   }
 ];
