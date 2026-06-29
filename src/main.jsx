@@ -7,6 +7,11 @@ import { Analytics } from '@vercel/analytics/react'
 createRoot(document.getElementById('root')).render(
   <StrictMode>
     <App />
-    <Analytics />
+    <Analytics beforeSend={(event) => {
+      if (typeof window !== 'undefined' && localStorage.getItem('ignore_analytics') === 'true') {
+        return null;
+      }
+      return event;
+    }} />
   </StrictMode>,
 )
