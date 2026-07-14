@@ -77,20 +77,6 @@ export const otherProjects = [
     videoId: 'GLXku7q29JQ'
   },
   {
-    id: 103,
-    title: '침식당한 루테시아',
-    description: '횡스크롤 액션 기반의 8인 레이드 보스전으로, 침식 스택 시스템과 보스 패턴을 파훼하기 위해 파티를 분할하여 역할을 분담하는 전투를 기획했습니다.',
-    tags: ['8인 레이드', '협동 기믹', '파티 분할'],
-    year: '2024',
-    genre: '멀티플레이 레이드',
-    engine: '언리얼 엔진 5',
-    mapSize: '14일',
-    role: '예상플레이 25분~30분',
-    coreExperience: '상황에 따른 파티 분할과 오브젝트 투척 등 유기적인 협력을 요구하는 레이드 전투 경험',
-    docLink: 'https://drive.google.com/file/d/1nqYPtdDVknOSQ2B1fcMyh5hwftVDY1Zy/view?usp=sharing',
-    videoId: 'sH5tL1whafg'
-  },
-  {
     id: 102,
     title: '죽음의 유적 동굴',
     description: '선형적인 구조 속에 숨겨진 장소를 배치하여 탐험의 재미를 더하고, 환경을 활용한 다채로운 전투를 유도하는 던전 기획입니다.',

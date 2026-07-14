@@ -228,7 +228,7 @@ const Projects = () => {
         <h3 className="text-headline">Other Projects</h3>
       </motion.div>
 
-      {/* Other Projects (3 items) */}
+      {/* Other Projects (2 items) */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'var(--spacing-lg)' }}>
         {otherProjects.map((project, i) => (
           <motion.div 
