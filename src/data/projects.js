@@ -16,7 +16,7 @@ export const mainProjects = [
     alignImage: 'left',
     videoId: 'b3vxNhd6nbE',
     mainImage: '/project1_main_v2.jpg',
-    docLink: 'https://drive.google.com/file/d/1QF-AN3V6uoRKzU2Aoh_vo-yPIi-WQX7d/view?usp=sharing',
+    docLink: 'https://drive.google.com/file/d/1ea-YDsDy22D7gL9ZdgULhXG8FvqMX7tt/view?usp=sharing',
     coreExperience: '공간 테마에 따라 플레이 경험을 다르게 배치한 단조로움 없는 밀도 높은 선형 레벨',
     references: '언차티드 4, 스텔라 블레이드, 툼레이더',
     screenshots: [
