@@ -81,7 +81,7 @@ export const subProjects = [
   },
   {
     id: 202,
-    title: '새 프로젝트 2',
+    title: '무기 격납고 탈출 작전',
     description: '여기에 프로젝트 설명을 입력하세요.',
     tags: ['태그1', '태그2'],
     year: '2026',
