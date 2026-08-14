@@ -65,7 +65,7 @@ export const subProjects = [
   {
     id: 201,
     title: '대성당으로 가는 길',
-    description: '15~16세기 중세 유럽 항구 도시를 배경으로 한 내러티브 RPG. 광신 교단 루엔시아의 은밀한 진실을 파헤치는 주인공 크리스의 여정을 밀집된 골목과 세밀한 동선으로 풀어낸 마을 레벨디자인입니다.',
+    description: '15~16세기 중세 유럽 항구 도시를 배경으로 한 내러티브 RPG. 마을 내 다양한 퀘스트 중 특정 퀘스트의 진행 과정에 맞춰 자연스러운 동선 유도와 탐험 요소를 설계한 마을 레벨디자인입니다.',
     tags: ['중세 유럽', '내러티브 RPG', '마을 레벨디자인'],
     year: '2026. 07',
     date: '2026. 07',
@@ -73,7 +73,7 @@ export const subProjects = [
     engine: '언리얼 엔진 5',
     mapSize: '20일',
     role: '약 6분',
-    coreExperience: '중세 유럽 마을의 밀집된 골목과 정교한 동선 설계를 통해 내러티브와 몰입감 높은 탐험을 전달하는 마을 레벨디자인',
+    coreExperience: '마을 내 다양한 퀘스트 흐름 속에서 특정 퀘스트 진행을 자연스럽고 몰입감 높은 동선으로 유도한 마을 레벨디자인',
     references: '위쳐3, 킹덤컴, 스카이림',
     docLink: 'https://drive.google.com/file/d/1YqjxgtoiYX3H1ZT-glut5TpmAm-ue_H1/view?usp=sharing',
     videoId: '13KtGZt2XsQ',
