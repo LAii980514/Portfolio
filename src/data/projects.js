@@ -91,7 +91,8 @@ export const subProjects = [
     role: '-',
     coreExperience: '핵심 경험 설명',
     docLink: '',
-    videoId: ''
+    videoId: '',
+    mainImage: '/ddddd.png'
   }
 ];
 
