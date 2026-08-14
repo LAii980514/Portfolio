@@ -84,7 +84,8 @@ export const subProjects = [
     title: '무기 격납고 탈출 작전',
     description: '여기에 프로젝트 설명을 입력하세요.',
     tags: ['탑뷰 RPG', '탈출 레벨디자인'],
-    year: '2026',
+    year: '2026. 07',
+    date: '2026. 07',
     genre: '탑뷰 RPG',
     engine: '언리얼 엔진 5',
     mapSize: '14일',
@@ -92,7 +93,8 @@ export const subProjects = [
     coreExperience: '핵심 경험 설명',
     docLink: '',
     videoId: '',
-    mainImage: '/ddddd.png'
+    mainImage: '/ddddd.png',
+    isComingSoon: true
   }
 ];
 

@@ -1,11 +1,69 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { Play, FileText, ArrowRight } from 'lucide-react';
+import { Play, FileText, ArrowRight, Lock } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 
-const VideoThumbnail = ({ videoId, mainImage, title, projectId }) => {
+const VideoThumbnail = ({ videoId, mainImage, title, projectId, isComingSoon }) => {
   const navigate = useNavigate();
   const imgSrc = mainImage || (videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : null);
+
+  if (isComingSoon) {
+    return (
+      <div
+        style={{
+          width: '100%',
+          height: '100%',
+          position: 'absolute',
+          top: 0,
+          left: 0,
+          cursor: 'not-allowed',
+          overflow: 'hidden'
+        }}
+      >
+        {imgSrc && (
+          <img
+            src={imgSrc}
+            alt={title}
+            style={{
+              width: '100%',
+              height: '100%',
+              objectFit: 'cover',
+              filter: 'grayscale(0.3) brightness(0.35)',
+              userSelect: 'none',
+              pointerEvents: 'none'
+            }}
+          />
+        )}
+        <div style={{
+          position: 'absolute',
+          top: '50%',
+          left: '50%',
+          transform: 'translate(-50%, -50%)',
+          padding: '10px 22px',
+          borderRadius: '30px',
+          background: 'rgba(20, 20, 30, 0.75)',
+          backdropFilter: 'blur(8px)',
+          border: '1px solid rgba(255, 255, 255, 0.15)',
+          display: 'flex',
+          alignItems: 'center',
+          gap: '8px',
+          boxShadow: '0 8px 32px rgba(0, 0, 0, 0.5)',
+          pointerEvents: 'none'
+        }}>
+          <Lock size={16} color="#a694f5" />
+          <span style={{ 
+            color: '#fff', 
+            fontSize: '13px', 
+            fontWeight: 600, 
+            letterSpacing: '1px',
+            fontFamily: "'S-Core Dream', sans-serif" 
+          }}>
+            COMING SOON
+          </span>
+        </div>
+      </div>
+    );
+  }
 
   return (
     <div
@@ -252,7 +310,7 @@ const Projects = () => {
               overflow: 'hidden'
             }}>
               {project.videoId || project.mainImage ? (
-                <VideoThumbnail videoId={project.videoId} mainImage={project.mainImage} title={project.title} projectId={project.id} />
+                <VideoThumbnail videoId={project.videoId} mainImage={project.mainImage} title={project.title} projectId={project.id} isComingSoon={project.isComingSoon} />
               ) : (
                 <div style={{ 
                   position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
@@ -276,7 +334,7 @@ const Projects = () => {
                 <span style={{ 
                   fontSize: '11px', 
                   fontWeight: 700, 
-                  color: 'var(--colors-primary)', 
+                  color: project.isComingSoon ? 'var(--colors-ink-muted)' : 'var(--colors-primary)', 
                   backgroundColor: 'var(--colors-surface-2)',
                   padding: '4px 10px',
                   borderRadius: 'var(--rounded-pill)',
@@ -297,11 +355,32 @@ const Projects = () => {
                 gap: '8px',
                 marginTop: 'auto'
               }}>
-                <Link to={`/project/${project.id}`} style={{ textDecoration: 'none' }}>
-                  <button className="button button-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', fontFamily: "'S-Core Dream', sans-serif", fontWeight: 400 }}>
-                    기획서 보기 <ArrowRight size={16} />
+                {project.isComingSoon ? (
+                  <button 
+                    disabled 
+                    className="button button-outline" 
+                    style={{ 
+                      display: 'flex', 
+                      alignItems: 'center', 
+                      gap: '8px', 
+                      padding: '8px 16px', 
+                      fontFamily: "'S-Core Dream', sans-serif", 
+                      fontWeight: 400,
+                      opacity: 0.5,
+                      cursor: 'not-allowed',
+                      borderColor: 'var(--colors-hairline)',
+                      color: 'var(--colors-ink-muted)'
+                    }}
+                  >
+                    <Lock size={15} /> 기획서 준비중
                   </button>
-                </Link>
+                ) : (
+                  <Link to={`/project/${project.id}`} style={{ textDecoration: 'none' }}>
+                    <button className="button button-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', fontFamily: "'S-Core Dream', sans-serif", fontWeight: 400 }}>
+                      기획서 보기 <ArrowRight size={16} />
+                    </button>
+                  </Link>
+                )}
               </div>
 
             </div>
