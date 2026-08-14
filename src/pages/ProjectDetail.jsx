@@ -3,11 +3,11 @@ import { useParams, Link } from 'react-router-dom';
 import { motion, AnimatePresence } from 'framer-motion';
 import { ArrowLeft, ExternalLink, FileText, ChevronLeft, ChevronRight } from 'lucide-react';
 import Header from '../components/Header';
-import { mainProjects, otherProjects } from '../data/projects';
+import { mainProjects, subProjects, otherProjects } from '../data/projects';
 
 const ProjectDetail = () => {
   const { id } = useParams();
-  const allProjects = [...mainProjects, ...otherProjects];
+  const allProjects = [...mainProjects, ...subProjects, ...otherProjects];
   const project = allProjects.find(p => p.id === parseInt(id));
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
   const [direction, setDirection] = useState(0);

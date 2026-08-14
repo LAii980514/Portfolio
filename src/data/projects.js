@@ -61,6 +61,40 @@ export const mainProjects = [
   }
 ];
 
+export const subProjects = [
+  {
+    id: 201,
+    title: '대성당으로 가는 길',
+    description: '15~16세기 중세 유럽 배경의 액션 RPG. 주인공 크리스가 광신 교단 루엔시아가 지배하는 항구 도시 르타폰에서 대성당의 진실을 파헤치기 위해 이동하는 과정을 다룹니다.',
+    tags: ['중세 유럽', '액션 RPG', '마을 레벨디자인'],
+    year: '2026. 07',
+    date: '2026. 07',
+    genre: '액션 RPG',
+    engine: '언리얼 엔진 5',
+    mapSize: '20일',
+    role: '약 6분',
+    coreExperience: '중세 유럽 마을의 밀집된 거리와 골목을 통해 탐험과 전투를 경험하는 마을 레벨디자인',
+    references: '위쳐3, 킹덤컴, 스카이림',
+    docLink: 'https://drive.google.com/file/d/1YqjxgtoiYX3H1ZT-glut5TpmAm-ue_H1/view?usp=sharing',
+    videoId: '13KtGZt2XsQ',
+    mainImage: '/대성당으로 가는 길.jpg'
+  },
+  {
+    id: 202,
+    title: '새 프로젝트 2',
+    description: '여기에 프로젝트 설명을 입력하세요.',
+    tags: ['태그1', '태그2'],
+    year: '2026',
+    genre: '장르 미정',
+    engine: '언리얼 엔진 5',
+    mapSize: '-',
+    role: '-',
+    coreExperience: '핵심 경험 설명',
+    docLink: '',
+    videoId: ''
+  }
+];
+
 export const otherProjects = [
   {
     id: 101,

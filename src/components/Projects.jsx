@@ -3,8 +3,9 @@ import { motion } from 'framer-motion';
 import { Play, FileText, ArrowRight } from 'lucide-react';
 import { Link, useNavigate } from 'react-router-dom';
 
-const VideoThumbnail = ({ videoId, title, projectId }) => {
+const VideoThumbnail = ({ videoId, mainImage, title, projectId }) => {
   const navigate = useNavigate();
+  const imgSrc = mainImage || (videoId ? `https://img.youtube.com/vi/${videoId}/hqdefault.jpg` : null);
 
   return (
     <div
@@ -19,19 +20,21 @@ const VideoThumbnail = ({ videoId, title, projectId }) => {
         overflow: 'hidden'
       }}
     >
-      <img
-        src={`https://img.youtube.com/vi/${videoId}/hqdefault.jpg`}
-        alt={title}
-        style={{
-          width: '100%',
-          height: '100%',
-          objectFit: 'cover',
-          transition: 'transform 0.3s ease, filter 0.3s ease',
-          filter: 'brightness(0.5)'
-        }}
-        onMouseOver={(e) => { e.currentTarget.style.transform = 'scale(1.05)'; e.currentTarget.style.filter = 'brightness(0.7)'; }}
-        onMouseOut={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.filter = 'brightness(0.5)'; }}
-      />
+      {imgSrc && (
+        <img
+          src={imgSrc}
+          alt={title}
+          style={{
+            width: '100%',
+            height: '100%',
+            objectFit: 'cover',
+            transition: 'transform 0.3s ease, filter 0.3s ease',
+            filter: 'brightness(0.6)'
+          }}
+          onMouseOver={(e) => { e.currentTarget.style.transform = 'scale(1.05)'; e.currentTarget.style.filter = 'brightness(0.8)'; }}
+          onMouseOut={(e) => { e.currentTarget.style.transform = 'scale(1)'; e.currentTarget.style.filter = 'brightness(0.6)'; }}
+        />
+      )}
       <div style={{
         position: 'absolute',
         top: '50%',
@@ -53,7 +56,7 @@ const VideoThumbnail = ({ videoId, title, projectId }) => {
     </div>
   );
 };
-import { mainProjects, otherProjects } from '../data/projects';
+import { mainProjects, subProjects, otherProjects } from '../data/projects';
 
 const Projects = () => {
   const fadeUpVariant = {
@@ -72,7 +75,7 @@ const Projects = () => {
       </motion.div>
 
       {/* Main Portfolios */}
-      <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-xxl)', marginBottom: 'var(--spacing-section)' }}>
+      <div style={{ display: 'flex', flexDirection: 'column', gap: 'var(--spacing-xxl)', marginBottom: 'var(--spacing-xxl)' }}>
         {mainProjects.map((project) => {
           const isLeft = project.alignImage === 'left';
           
@@ -86,7 +89,7 @@ const Projects = () => {
                 flexDirection: isLeft ? 'row' : 'row-reverse',
                 borderRadius: 'var(--rounded-xl)',
                 overflow: 'hidden',
-                minHeight: '360px' // Reduced height
+                minHeight: '360px'
               }}
             >
               {/* Image Side */}
@@ -221,6 +224,91 @@ const Projects = () => {
         })}
       </div>
 
+      {/* Sub Projects - 2 cards side by side below main projects */}
+      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 'var(--spacing-lg)', marginBottom: 'var(--spacing-section)' }}>
+        {subProjects.map((project, i) => (
+          <motion.div 
+            key={`sub-${project.id}`} 
+            initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-50px" }} 
+            variants={{
+              hidden: { opacity: 0, y: 40 },
+              visible: { opacity: 1, y: 0, transition: { duration: 0.8, delay: i * 0.1, ease: "easeOut" } }
+            }}
+            className="surface-1" 
+            style={{ 
+              display: 'flex', 
+              flexDirection: 'column', 
+              borderRadius: 'var(--rounded-lg)',
+              overflow: 'hidden',
+              padding: 0
+            }}
+          >
+            {/* Image / Video Box */}
+            <div style={{ 
+              width: '100%', 
+              aspectRatio: '16/9', 
+              backgroundColor: '#000',
+              position: 'relative',
+              overflow: 'hidden'
+            }}>
+              {project.videoId || project.mainImage ? (
+                <VideoThumbnail videoId={project.videoId} mainImage={project.mainImage} title={project.title} projectId={project.id} />
+              ) : (
+                <div style={{ 
+                  position: 'absolute', top: 0, left: 0, width: '100%', height: '100%',
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  background: 'linear-gradient(135deg, var(--colors-surface-2), var(--colors-surface-3))'
+                }}>
+                  <span className="text-caption" style={{ color: 'var(--colors-ink-subtle)' }}>영상 준비 중</span>
+                </div>
+              )}
+            </div>
+            
+            {/* Content Box */}
+            <div style={{ 
+              padding: 'var(--spacing-lg)', 
+              display: 'flex', 
+              flexDirection: 'column', 
+              flex: 1 
+            }}>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 'var(--spacing-xs)' }}>
+                <h4 className="text-card-title" style={{ margin: 0, fontFamily: "'S-Core Dream', sans-serif", fontWeight: 500 }}>{project.title}</h4>
+                <span style={{ 
+                  fontSize: '11px', 
+                  fontWeight: 700, 
+                  color: 'var(--colors-primary)', 
+                  backgroundColor: 'var(--colors-surface-2)',
+                  padding: '4px 10px',
+                  borderRadius: 'var(--rounded-pill)',
+                  border: '1px solid var(--colors-hairline)'
+                }}>
+                  {project.year}
+                </span>
+              </div>
+              <p className="text-body-sm" style={{ color: 'var(--colors-ink-muted)', marginBottom: 'var(--spacing-md)', flex: 1, lineHeight: 1.6, wordBreak: 'keep-all', fontFamily: "'S-Core Dream', sans-serif" }}>
+                {project.description}
+              </p>
+              
+              {/* Divider & Buttons */}
+              <div style={{ 
+                borderTop: '1px solid var(--colors-hairline)', 
+                paddingTop: 'var(--spacing-md)',
+                display: 'flex',
+                gap: '8px',
+                marginTop: 'auto'
+              }}>
+                <Link to={`/project/${project.id}`} style={{ textDecoration: 'none' }}>
+                  <button className="button button-outline" style={{ display: 'flex', alignItems: 'center', gap: '8px', padding: '8px 16px', fontFamily: "'S-Core Dream', sans-serif", fontWeight: 400 }}>
+                    기획서 보기 <ArrowRight size={16} />
+                  </button>
+                </Link>
+              </div>
+
+            </div>
+          </motion.div>
+        ))}
+      </div>
+
       <motion.div 
         initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }} variants={fadeUpVariant}
         style={{ textAlign: 'center', marginBottom: 'var(--spacing-xl)' }}
@@ -228,7 +316,7 @@ const Projects = () => {
         <h3 className="text-headline">Other Projects</h3>
       </motion.div>
 
-      {/* Other Projects (3 items) */}
+      {/* Other Projects (3 items) - Original layout restored */}
       <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(320px, 1fr))', gap: 'var(--spacing-lg)' }}>
         {otherProjects.map((project, i) => (
           <motion.div 
@@ -244,7 +332,7 @@ const Projects = () => {
               flexDirection: 'column', 
               borderRadius: 'var(--rounded-lg)',
               overflow: 'hidden',
-              padding: 0 // Remove default padding to let image bleed to edges
+              padding: 0
             }}
           >
             {/* Video Box */}
