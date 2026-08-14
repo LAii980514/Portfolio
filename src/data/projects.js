@@ -1,7 +1,7 @@
 export const mainProjects = [
   {
     id: 1,
-    title: "빛에 잠긴 미술관",
+    title: "물에 잠긴 미술관",
     date: "2026. 06",
     genre: "액션 어드벤처",
     engine: "언리얼 엔진 5.7",
