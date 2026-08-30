@@ -82,7 +82,7 @@ export const subProjects = [
   {
     id: 202,
     title: '무기 격납고 탈출 작전',
-    description: '여기에 프로젝트 설명을 입력하세요.',
+    description: '봉쇄된 군사 무기 격납고를 배경으로 한 탑뷰 액션 RPG 레벨 기획입니다. 끊임없는 전투 속에서 보안 시스템을 해제하고 기믹을 파훼하며 탈출하는 전략적인 동선을 설계했습니다.',
     tags: ['탑뷰 RPG', '탈출 레벨디자인'],
     year: '2026. 07',
     date: '2026. 07',
@@ -90,11 +90,11 @@ export const subProjects = [
     engine: '언리얼 엔진 5',
     mapSize: '14일',
     role: '10분',
-    coreExperience: '핵심 경험 설명',
-    docLink: '',
-    videoId: '',
-    mainImage: '/ddddd.png',
-    isComingSoon: true
+    coreExperience: '끊임없는 전투 속에서 보안 시스템 해제와 기믹을 파훼하며 격납고를 돌파하는 전략적 탈출 레벨디자인',
+    references: '탑뷰 액션 RPG, SF 격납고 레벨',
+    docLink: 'https://drive.google.com/file/d/1CGlGO4nCCkhTdDLLwjDPB-XxgETdNcVl/view?usp=sharing',
+    videoId: 'ahdZOjnrMnE',
+    mainImage: '/ddddd.png'
   }
 ];
 
