@@ -90,7 +90,7 @@ export const subProjects = [
     engine: '언리얼 엔진 5',
     mapSize: '14일',
     role: '10분',
-    coreExperience: '끊임없는 전투 속에서 보안 시스템 해제와 기믹을 파훼하며 격납고를 돌파하는 전략적 탈출 레벨디자인',
+    coreExperience: '끊임없는 전투 속에서 보안 시스템 해제와 기믹을 파훼하며 격납고를 돌파하는 레벨디자인',
     references: '탑뷰 액션 RPG, SF 격납고 레벨',
     docLink: 'https://drive.google.com/file/d/1CGlGO4nCCkhTdDLLwjDPB-XxgETdNcVl/view?usp=sharing',
     videoId: 'ahdZOjnrMnE',
